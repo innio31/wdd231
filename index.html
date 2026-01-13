@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD231 Course Home Page">
+    <meta name="author" content="Emmanuel Ademuyiwa">
+    <title>Site Name | WDD231</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript Files -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="images/logo.svg" alt="Site Logo">
+                <h1>Site Name</h1>
+            </div>
+            <button id="menu-toggle" aria-label="Toggle menu">
+                <span class="hamburger">☰</span>
+                <span class="close">✕</span>
+            </button>
+        </div>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="chamber.html">Chamber Project</a></li>
+                <li><a href="final.html">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Home</h2>
+        </section>
+
+        <div class="main-content">
+            <section class="about-section">
+                <h3>About Me</h3>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Massa Facilisis Per Purus Si Imperdiet Curae Amet. Et Fames Lorem Mi Phasellus Congue
+                            Nascetur Enim Consectetur Sociosqu Natoque Risus. Odio Vehicula Libero Nisl Viverra Augue
+                            Commodo Pretium Vivamus At Duis Magna. Quam Fringilla Convallis Ridiculus Malesuada Accumsan
+                            Potenti Magnis Volutpat Nulla Ipsum. Dis Maecenas Et Praesent Class Fringilla.</p>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="images/profile.jpg" alt="Student Profile Photo" loading="lazy">
+                    </div>
+                </div>
+            </section>
+
+            <section class="courses-section">
+                <h3>Web Certificate Courses</h3>
+
+                <div class="filter-buttons">
+                    <button id="all-courses" class="filter-btn active">All</button>
+                    <button id="wdd-courses" class="filter-btn">WDD</button>
+                    <button id="cse-courses" class="filter-btn">CSE</button>
+                </div>
+
+                <div id="courses-container" class="courses-grid">
+                    <!-- Courses will be dynamically inserted here -->
+                </div>
+
+                <div class="credits-info">
+                    <p>The total credits for courses listed above is <span id="total-credits">0</span></p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://github.com" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+
+            <div class="footer-info">
+                <p>&copy; <span id="current-year"></span> - Emmanuel Ademuyiwa • Ota, Nigeria</p>
+                <p>Last Modification: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
