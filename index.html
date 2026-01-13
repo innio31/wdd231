@@ -4,14 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD231 Course Home Page">
+    <meta name="description"
+        content="WDD231 Web Frontend Development course portfolio - Explore certificate courses, student projects, and responsive web design work.">
     <meta name="author" content="Emmanuel Ademuyiwa">
-    <title>Site Name | WDD231</title>
 
-    <!-- Google Font -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- CSS Files -->
     <link rel="stylesheet" href="styles/normalize.css">
@@ -23,8 +27,7 @@
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/courses.js" defer></script>
 
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Site Name | WDD231 Course Home</title>
 </head>
 
 <body>
@@ -50,19 +53,14 @@
     </header>
 
     <main>
-        <section class="hero">
-            <h2>Home</h2>
-        </section>
 
         <div class="main-content">
+            <!-- Section 1: About Me -->
             <section class="about-section">
-                <h3>About Me</h3>
+                <h2>About Me</h2> <!-- Changed from h3 to h2 -->
                 <div class="about-content">
                     <div class="about-text">
-                        <p>Massa Facilisis Per Purus Si Imperdiet Curae Amet. Et Fames Lorem Mi Phasellus Congue
-                            Nascetur Enim Consectetur Sociosqu Natoque Risus. Odio Vehicula Libero Nisl Viverra Augue
-                            Commodo Pretium Vivamus At Duis Magna. Quam Fringilla Convallis Ridiculus Malesuada Accumsan
-                            Potenti Magnis Volutpat Nulla Ipsum. Dis Maecenas Et Praesent Class Fringilla.</p>
+                        <p>Massa Facilisis Per Purus Si Imperdiet Curae Amet...</p>
                     </div>
                     <div class="profile-photo">
                         <img src="images/profile.jpg" alt="Student Profile Photo" loading="lazy">
@@ -70,8 +68,9 @@
                 </div>
             </section>
 
+            <!-- Section 2: Web Certificate Courses -->
             <section class="courses-section">
-                <h3>Web Certificate Courses</h3>
+                <h2>Web Certificate Courses</h2> <!-- Changed from h3 to h2 -->
 
                 <div class="filter-buttons">
                     <button id="all-courses" class="filter-btn active">All</button>
@@ -85,6 +84,32 @@
 
                 <div class="credits-info">
                     <p>The total credits for courses listed above is <span id="total-credits">0</span></p>
+                </div>
+            </section>
+
+            <!-- Section 3: Course Resources (Add this section if missing) -->
+            <section class="resources-section">
+                <h2>Course Resources</h2> <!-- Add this heading -->
+                <div class="resources-content">
+                    <!-- Add your resources content here -->
+                    <div class="resource-card">
+                        <h3>Helpful Links</h3>
+                        <ul>
+                            <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+                            <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+                            <li><a href="https://validator.w3.org/" target="_blank">HTML Validator</a></li>
+                            <li><a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS Validator</a></li>
+                        </ul>
+                    </div>
+                    <div class="resource-card">
+                        <h3>Course Tools</h3>
+                        <ul>
+                            <li>VS Code</li>
+                            <li>Git & GitHub</li>
+                            <li>Chrome DevTools</li>
+                            <li>Lighthouse</li>
+                        </ul>
+                    </div>
                 </div>
             </section>
         </div>
