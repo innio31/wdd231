@@ -1,0 +1,112 @@
+[
+    {
+        "name": "Impact Digital Academy",
+        "address": "1 Canaanland Road, Ota, Ogun State",
+        "phone": "+234 (803) 456-7890",
+        "website": "https://impactdigitalacademy.com.ng",
+        "image": "impact-digital.jpg",
+        "membership": 3,
+        "industry": "Education & Technology",
+        "description": "Premier digital skills training institute offering courses in web development, data science, and digital marketing.",
+        "founded": 2020
+    },
+    {
+        "name": "Ota Main Market Traders Association",
+        "address": "52 Market Road, Ota Main Market, Ota, Ogun State",
+        "phone": "+234 (802) 345-6789",
+        "website": "https://otamainmarket.com",
+        "image": "ota-market.jpg",
+        "membership": 2,
+        "industry": "Commerce & Trade",
+        "description": "Largest market association representing over 5,000 traders in Ota. Focused on promoting local commerce.",
+        "founded": 1985
+    },
+    {
+        "name": "Covenant University Business Incubator",
+        "address": "Canaanland, Km 10 Idiroko Road, Ota, Ogun State",
+        "phone": "+234 (807) 890-1234",
+        "website": "https://covenantuniversity.edu.ng/business-incubator",
+        "image": "covenant-incubator.jpg",
+        "membership": 3,
+        "industry": "Education & Entrepreneurship",
+        "description": "University-based incubator supporting student and community startups with mentorship and resources.",
+        "founded": 2008
+    },
+    {
+        "name": "Nestle Nigeria PLC",
+        "address": "Agbara Industrial Estate, Ota, Ogun State",
+        "phone": "+234 (809) 876-5432",
+        "website": "https://www.nestle.com.ng",
+        "image": "nestle-ota.jpg",
+        "membership": 3,
+        "industry": "Manufacturing",
+        "description": "Leading food and beverage manufacturing company providing essential products and employment opportunities.",
+        "founded": 1961
+    },
+    {
+        "name": "Dangote Cement Plc - Ota Plant",
+        "address": "Ijako Road, Ota, Ogun State",
+        "phone": "+234 (805) 234-5678",
+        "website": "https://dangotecement.com",
+        "image": "dangote-cement.jpg",
+        "membership": 3,
+        "industry": "Manufacturing & Construction",
+        "description": "Major cement production facility providing construction materials and industrial employment.",
+        "founded": 2012
+    },
+    {
+        "name": "Ota Microfinance Bank",
+        "address": "78 Lagos-Abeokuta Expressway, Ota, Ogun State",
+        "phone": "+234 (701) 234-5678",
+        "website": "https://otamfb.com",
+        "image": "ota-mfb.jpg",
+        "membership": 2,
+        "industry": "Banking & Finance",
+        "description": "Community-focused microfinance institution providing banking services to SMEs and individuals.",
+        "founded": 2005
+    },
+    {
+        "name": "Adire Ota Textile Collective",
+        "address": "25 Itori Road, Ota, Ogun State",
+        "phone": "+234 (811) 987-6543",
+        "website": "https://adireota.com",
+        "image": "adire-collective.jpg",
+        "membership": 1,
+        "industry": "Textile & Fashion",
+        "description": "Cooperative of traditional textile artists preserving and promoting Adire (tie-dye) craftsmanship.",
+        "founded": 2015
+    },
+    {
+        "name": "PrimeTech Solutions Ltd",
+        "address": "Suite 12, Tech Hub Plaza, Sango-Ota, Ogun State",
+        "phone": "+234 (814) 567-8901",
+        "website": "https://primetechsolutions.ng",
+        "image": "primetech-solutions.jpg",
+        "membership": 2,
+        "industry": "Information Technology",
+        "description": "IT consulting firm specializing in business software, network solutions, and digital transformation.",
+        "founded": 2018
+    },
+    {
+        "name": "Ota Agro-Processing Company",
+        "address": "Km 15 Idiroko Road, Ota, Ogun State",
+        "phone": "+234 (806) 789-0123",
+        "website": "https://otaagroprocessing.com",
+        "image": "ota-agro.jpg",
+        "membership": 1,
+        "industry": "Agriculture & Food Processing",
+        "description": "Agricultural processing facility focusing on cassava, maize, and vegetable oil production.",
+        "founded": 2010
+    },
+    {
+        "name": "MediCare Hospital Ota",
+        "address": "12 General Hospital Road, Ota, Ogun State",
+        "phone": "+234 (815) 678-9012",
+        "website": "https://medicareota.com",
+        "image": "medicare-hospital.jpg",
+        "membership": 2,
+        "industry": "Healthcare",
+        "description": "Full-service private hospital providing quality healthcare services to Ota and surrounding communities.",
+        "founded": 2016
+    }
+]

@@ -1,0 +1,106 @@
+{
+    "wardMembers": [
+        {
+            "familyName": "Johnson",
+            "moveInDate": "2023-05-15",
+            "familySize": 4,
+            "visitedByBishopric": true,
+            "familyMembers": [
+                {
+                    "name": "Robert Johnson",
+                    "gender": "Male",
+                    "birthdate": "1980-03-22"
+                },
+                {
+                    "name": "Sarah Johnson",
+                    "gender": "Female",
+                    "birthdate": "1982-07-14"
+                },
+                {
+                    "name": "Michael Johnson",
+                    "gender": "Male",
+                    "birthdate": "2008-11-30"
+                },
+                {
+                    "name": "Emily Johnson",
+                    "gender": "Female",
+                    "birthdate": "2012-02-18"
+                }
+            ]
+        },
+        {
+            "familyName": "Garcia",
+            "moveInDate": "2024-01-10",
+            "familySize": 3,
+            "visitedByBishopric": false,
+            "familyMembers": [
+                {
+                    "name": "Carlos Garcia",
+                    "gender": "Male",
+                    "birthdate": "1978-09-05"
+                },
+                {
+                    "name": "Maria Garcia",
+                    "gender": "Female",
+                    "birthdate": "1980-12-20"
+                },
+                {
+                    "name": "Sophia Garcia",
+                    "gender": "Female",
+                    "birthdate": "2015-04-12"
+                }
+            ]
+        },
+        {
+            "familyName": "Chen",
+            "moveInDate": "2023-11-03",
+            "familySize": 5,
+            "visitedByBishopric": true,
+            "familyMembers": [
+                {
+                    "name": "David Chen",
+                    "gender": "Male",
+                    "birthdate": "1975-06-28"
+                },
+                {
+                    "name": "Li Chen",
+                    "gender": "Female",
+                    "birthdate": "1977-10-15"
+                },
+                {
+                    "name": "Alex Chen",
+                    "gender": "Male",
+                    "birthdate": "2005-08-09"
+                },
+                {
+                    "name": "Grace Chen",
+                    "gender": "Female",
+                    "birthdate": "2007-03-25"
+                },
+                {
+                    "name": "Kevin Chen",
+                    "gender": "Male",
+                    "birthdate": "2010-12-03"
+                }
+            ]
+        },
+        {
+            "familyName": "Williams",
+            "moveInDate": "2024-02-28",
+            "familySize": 2,
+            "visitedByBishopric": false,
+            "familyMembers": [
+                {
+                    "name": "James Williams",
+                    "gender": "Male",
+                    "birthdate": "1990-04-17"
+                },
+                {
+                    "name": "Olivia Williams",
+                    "gender": "Female",
+                    "birthdate": "1992-01-29"
+                }
+            ]
+        }
+    ]
+}
