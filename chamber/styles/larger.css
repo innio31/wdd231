@@ -49,3 +49,46 @@
         padding-left: 2rem;
     }
 }
+
+
+/* Tablet Styles - Home Page */
+@media (min-width: 768px) {
+    .hero-image {
+        height: 400px;
+    }
+
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .events-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .spotlights-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop Styles - Home Page */
+@media (min-width: 1024px) {
+    .hero-content h2 {
+        font-size: 3rem;
+    }
+
+    .events-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .weather-container {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .forecast-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .spotlights-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
