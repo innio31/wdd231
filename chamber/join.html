@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Join Ota Chamber of Commerce - Choose your membership level and grow your business with us.">
+    <meta name="author" content="Emmanuel Ademuyiwa">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:title" content="Join Ota Chamber of Commerce">
+    <meta property="og:description" content="Become a member and grow your business in Ota">
+    <meta property="og:image" content="https://innio31.github.io/wdd231/chamber/images/social-preview.jpg">
+    <meta property="og:url" content="https://innio31.github.io/wdd231/chamber/join.html">
+    <meta property="og:type" content="website">
+
+    <title>Join Ota Chamber of Commerce</title>
+    <!-- Favicon -->
+    <link rel="icon" href="images/chamber-logo.ico" type="image/png">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/join.css">
+
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo-link">
+                <img src="images/chamber-logo.png" alt="Ota Chamber of Commerce Logo">
+                <h1>Ota Chamber of Commerce</h1>
+            </a>
+            <button id="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+        </div>
+
+        <nav id="primary-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="join-main">
+        <h2>Join Our Chamber of Commerce</h2>
+        <p class="intro-text">Become a member and join over 100 businesses growing together in Ota. Choose the
+            membership level that's right for you.</p>
+
+        <div class="join-container">
+            <!-- Application Form -->
+            <section class="application-form">
+                <h3>Membership Application</h3>
+                <form method="get" action="thankyou.html" id="membership-form">
+                    <!-- Personal Information -->
+                    <fieldset>
+                        <legend>Personal Information</legend>
+
+                        <label for="first-name">
+                            First Name *
+                            <input type="text" id="first-name" name="first-name" title="Enter your first name"
+                                autocomplete="given-name" required pattern="[A-Za-z\s]{2,}">
+                        </label>
+
+                        <label for="last-name">
+                            Last Name *
+                            <input type="text" id="last-name" name="last-name" title="Enter your last name"
+                                autocomplete="family-name" required pattern="[A-Za-z\s]{2,}">
+                        </label>
+
+                        <label for="title">
+                            Organizational Title
+                            <input type="text" id="title" name="title" title="Enter your job title"
+                                autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}"
+                                placeholder="e.g., Marketing Director">
+                            <small>Minimum 7 characters (letters, spaces, and hyphens only)</small>
+                        </label>
+
+                        <label for="email">
+                            Email Address *
+                            <input type="email" id="email" name="email" title="Enter your email address"
+                                autocomplete="email" required placeholder="name@example.com">
+                        </label>
+
+                        <label for="phone">
+                            Mobile Phone *
+                            <input type="tel" id="phone" name="phone" title="Enter your mobile phone number"
+                                autocomplete="tel" required placeholder="+234 123 456 7890">
+                        </label>
+                    </fieldset>
+
+                    <!-- Business Information -->
+                    <fieldset>
+                        <legend>Business Information</legend>
+
+                        <label for="business-name">
+                            Business/Organization Name *
+                            <input type="text" id="business-name" name="business-name" title="Enter your business name"
+                                autocomplete="organization" required>
+                        </label>
+
+                        <label for="membership-level">
+                            Membership Level *
+                            <select id="membership-level" name="membership-level" title="Select membership level"
+                                required>
+                                <option value="">Select a membership level</option>
+                                <option value="np">NP Membership (Non-Profit) - Free</option>
+                                <option value="bronze">Bronze Membership - ₦10,000/month</option>
+                                <option value="silver">Silver Membership - ₦25,000/month</option>
+                                <option value="gold">Gold Membership - ₦50,000/month</option>
+                            </select>
+                        </label>
+
+                        <label for="description">
+                            Business Description
+                            <textarea id="description" name="description" title="Describe your business or organization"
+                                rows="4"></textarea>
+                        </label>
+                    </fieldset>
+
+                    <!-- Hidden timestamp field -->
+                    <input type="hidden" id="timestamp" name="timestamp">
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="submit-btn">Submit Application</button>
+                </form>
+            </section>
+
+            <!-- Membership Cards -->
+            <section class="membership-cards">
+                <h3>Membership Benefits</h3>
+                <div class="cards-container">
+                    <!-- NP Membership Card -->
+                    <div class="membership-card" data-level="np">
+                        <div class="card-header">
+                            <h4>NP Membership</h4>
+                            <div class="price">Free</div>
+                        </div>
+                        <div class="card-body">
+                            <ul>
+                                <li>✓ Business listing in directory</li>
+                                <li>✓ Monthly newsletter</li>
+                                <li>✓ Access to basic events</li>
+                                <li>✓ Chamber decal</li>
+                            </ul>
+                            <button class="info-btn" data-modal="np-modal">Learn More</button>
+                        </div>
+                    </div>
+
+                    <!-- Bronze Membership Card -->
+                    <div class="membership-card" data-level="bronze">
+                        <div class="card-header">
+                            <h4>Bronze Membership</h4>
+                            <div class="price">₦10,000<span>/month</span></div>
+                        </div>
+                        <div class="card-body">
+                            <ul>
+                                <li>✓ All NP benefits</li>
+                                <li>✓ 10% event discounts</li>
+                                <li>✓ Business training sessions</li>
+                                <li>✓ Social media mentions</li>
+                            </ul>
+                            <button class="info-btn" data-modal="bronze-modal">Learn More</button>
+                        </div>
+                    </div>
+
+                    <!-- Silver Membership Card -->
+                    <div class="membership-card" data-level="silver">
+                        <div class="card-header">
+                            <h4>Silver Membership</h4>
+                            <div class="price">₦25,000<span>/month</span></div>
+                        </div>
+                        <div class="card-body">
+                            <ul>
+                                <li>✓ All Bronze benefits</li>
+                                <li>✓ 25% event discounts</li>
+                                <li>✓ Featured in newsletter</li>
+                                <li>✓ Priority networking</li>
+                                <li>✓ Training workshops</li>
+                            </ul>
+                            <button class="info-btn" data-modal="silver-modal">Learn More</button>
+                        </div>
+                    </div>
+
+                    <!-- Gold Membership Card -->
+                    <div class="membership-card" data-level="gold">
+                        <div class="card-header">
+                            <h4>Gold Membership</h4>
+                            <div class="price">₦50,000<span>/month</span></div>
+                        </div>
+                        <div class="card-body">
+                            <ul>
+                                <li>✓ All Silver benefits</li>
+                                <li>✓ Home page spotlight</li>
+                                <li>✓ 50% event discounts</li>
+                                <li>✓ VIP event access</li>
+                                <li>✓ Board meeting access</li>
+                                <li>✓ Dedicated support</li>
+                            </ul>
+                            <button class="info-btn" data-modal="gold-modal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Membership Modals -->
+        <div id="np-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h3>NP Membership Details</h3>
+                <div class="modal-body">
+                    <p><strong>Perfect for non-profit organizations</strong></p>
+                    <ul>
+                        <li>✅ Basic business listing in our online directory</li>
+                        <li>✅ Receive our monthly Chamber newsletter</li>
+                        <li>✅ Access to general member meetings (2 per year)</li>
+                        <li>✅ Chamber window decal for your organization</li>
+                        <li>✅ Use of Chamber logo on your website</li>
+                        <li>✅ Subscription to business alerts and updates</li>
+                    </ul>
+                    <p><em>Cost: Free for verified non-profit organizations</em></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="bronze-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h3>Bronze Membership Details</h3>
+                <div class="modal-body">
+                    <p><strong>Great for small businesses and startups</strong></p>
+                    <ul>
+                        <li>✅ All NP Membership benefits</li>
+                        <li>✅ 10% discount on all Chamber events</li>
+                        <li>✅ 2 free business training sessions annually</li>
+                        <li>✅ Social media mentions on Chamber platforms</li>
+                        <li>✅ Access to member-only resources</li>
+                        <li>✅ Quarterly business consultation</li>
+                        <li>✅ Listing in printed Chamber directory</li>
+                    </ul>
+                    <p><em>Cost: ₦10,000 per month</em></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="silver-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h3>Silver Membership Details</h3>
+                <div class="modal-body">
+                    <p><strong>Ideal for growing businesses</strong></p>
+                    <ul>
+                        <li>✅ All Bronze Membership benefits</li>
+                        <li>✅ 25% discount on all Chamber events</li>
+                        <li>✅ Featured business profile in monthly newsletter</li>
+                        <li>✅ Priority networking event invitations</li>
+                        <li>✅ 4 free training workshops annually</li>
+                        <li>✅ Access to premium business resources</li>
+                        <li>✅ Monthly business spotlight opportunity</li>
+                        <li>✅ Voting rights in Chamber elections</li>
+                    </ul>
+                    <p><em>Cost: ₦25,000 per month</em></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="gold-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h3>Gold Membership Details</h3>
+                <div class="modal-body">
+                    <p><strong>Premium benefits for established businesses</strong></p>
+                    <ul>
+                        <li>✅ All Silver Membership benefits</li>
+                        <li>✅ Featured home page spotlight (rotating)</li>
+                        <li>✅ 50% discount on all Chamber events</li>
+                        <li>✅ VIP access to exclusive events</li>
+                        <li>✅ Attend board meetings as observer</li>
+                        <li>✅ Dedicated account manager</li>
+                        <li>✅ Unlimited training workshops</li>
+                        <li>✅ Featured speaker opportunities at events</li>
+                        <li>✅ Priority referral system</li>
+                        <li>✅ Annual business review with Chamber leadership</li>
+                    </ul>
+                    <p><em>Cost: ₦50,000 per month</em></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Ota Chamber of Commerce</h3>
+                <p>5, Ade-Akinlade Street, Iyesi, Ota, Ogun</p>
+                <p>Ota, Ogun</p>
+                <p>Phone: 234 903 544 8295</p>
+                <p>Email: info@otacitychamber.org</p>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Ota Chamber of Commerce</p>
+                <p><span id="your-name">Emmanuel Ademuyiwa</span> | WDD 231 Project</p>
+                <p>Last Modified: <span id="last-modified"></span></p>
+                <p>Weather data provided by OpenWeatherMap</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/join.js"></script>
+</body>
+
+</html>

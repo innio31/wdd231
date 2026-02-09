@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Thank you for joining Ota Chamber of Commerce. Welcome to our business community.">
+    <meta name="author" content="Emmanuel Ademuyiwa">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:title" content="Welcome to Ota Chamber of Commerce">
+    <meta property="og:description" content="Thank you for your membership application">
+    <meta property="og:image" content="https://innio31.github.io/wdd231/chamber/images/social-preview.jpg">
+    <meta property="og:url" content="https://innio31.github.io/wdd231/chamber/thankyou.html">
+    <meta property="og:type" content="website">
+
+    <title>Thank You - Ota Chamber of Commerce</title>
+    <!-- Favicon -->
+    <link rel="icon" href="images/chamber-logo.ico" type="image/png">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/thankyou.css">
+
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo-link">
+                <img src="images/chamber-logo.png" alt="Ota Chamber of Commerce Logo">
+                <h1>Ota Chamber of Commerce</h1>
+            </a>
+            <button id="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+        </div>
+
+        <nav id="primary-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="thankyou-main">
+        <div class="thankyou-container">
+            <div class="thankyou-header">
+                <h2>Thank You for Your Application!</h2>
+                <p class="subtitle">Welcome to the Ota Chamber of Commerce community</p>
+                <div class="success-icon">✓</div>
+            </div>
+
+            <div class="application-summary">
+                <h3>Application Summary</h3>
+                <div class="summary-content">
+                    <!-- Application details will be displayed here -->
+                </div>
+
+                <div class="next-steps">
+                    <h4>What Happens Next?</h4>
+                    <ul>
+                        <li>Our membership team will review your application within 2 business days</li>
+                        <li>You will receive a welcome email with login credentials for the member portal</li>
+                        <li>A Chamber representative will contact you to schedule an orientation session</li>
+                        <li>You'll receive your membership package within 5-7 business days</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <a href="index.html" class="btn btn-primary">Return to Home</a>
+                <a href="directory.html" class="btn btn-secondary">Explore Members Directory</a>
+                <a href="contact.html" class="btn btn-outline">Contact Us</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Ota Chamber of Commerce</h3>
+                <p>5, Ade-Akinlade Street, Iyesi, Ota, Ogun</p>
+                <p>Ota, Ogun</p>
+                <p>Phone: 234 903 544 8295</p>
+                <p>Email: info@otacitychamber.org</p>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Ota Chamber of Commerce</p>
+                <p><span id="your-name">Emmanuel Ademuyiwa</span> | WDD 231 Project</p>
+                <p>Last Modified: <span id="last-modified"></span></p>
+                <p>Weather data provided by OpenWeatherMap</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/thankyou.js"></script>
+</body>
+
+</html>
