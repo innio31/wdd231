@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impact Digital Academy - Website Plan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <style>
+        /* CSS Variables for Color Scheme */
+        :root {
+            --primary-color: #1a5fb4;
+            /* Blue for headings and accents */
+            --secondary-color: #333333;
+            /* Dark gray for body text */
+            --accent-color: #e95420;
+            /* Orange for highlights */
+            --background-color: #f8f9fa;
+            /* Light gray for backgrounds */
+            --card-color: #ffffff;
+            /* White for cards and sections */
+        }
+
+        /* Typography */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+            line-height: 1.6;
+            color: var(--secondary-color);
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-top: 0;
+            border-bottom: 3px solid var(--accent-color);
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            border-left: 5px solid var(--primary-color);
+            padding-left: 15px;
+            margin-top: 30px;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+            color: var(--secondary-color);
+        }
+
+        .accent-text {
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        /* Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .logo {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .tagline {
+            font-style: italic;
+            margin-top: 5px;
+            opacity: 0.9;
+        }
+
+        section {
+            background-color: var(--card-color);
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        .color-scheme {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 15px;
+        }
+
+        .color-item {
+            width: 150px;
+            text-align: center;
+        }
+
+        .color-box {
+            height: 80px;
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+        }
+
+        .primary-color {
+            background-color: var(--primary-color);
+        }
+
+        .secondary-color {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+
+        .accent-color {
+            background-color: var(--accent-color);
+        }
+
+        .background-color {
+            background-color: var(--background-color);
+            border: 1px solid #ccc;
+        }
+
+        .card-color {
+            background-color: var(--card-color);
+            border: 1px solid #ccc;
+        }
+
+        .wireframe-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 15px;
+        }
+
+        .wireframe {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .wireframe h3 {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .wireframe-box {
+            background-color: white;
+            border: 2px solid var(--secondary-color);
+            border-radius: 5px;
+            padding: 15px;
+            min-height: 400px;
+        }
+
+        .wireframe-section {
+            border: 1px dashed #999;
+            border-radius: 3px;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #f5f5f5;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .desktop-layout {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-gap: 10px;
+        }
+
+        .mobile-layout {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .wireframe-container {
+                flex-direction: column;
+            }
+
+            .color-scheme {
+                justify-content: center;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Impact Digital Academy</h1>
+            <p class="tagline">Website Development Plan</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="site-name">
+            <h2>Site Name</h2>
+            <p><strong>Impact Digital Academy</strong> or alternative domain: <span
+                    class="accent-text">impactdigitalacademy.com</span></p>
+            <p>This name was selected because it clearly communicates the organization's purpose: creating
+                <strong>impact</strong> through <strong>digital</strong> education in an <strong>academy</strong>
+                format. The name is professional, memorable, and directly relates to the mission of bridging digital
+                skill gaps in underserved communities. The ".com" domain extension reinforces the educational focus.
+            </p>
+        </section>
+
+        <section id="site-purpose">
+            <h2>Site Purpose</h2>
+            <p>The Impact Digital Academy website will serve as the primary digital platform to:</p>
+            <ul>
+                <li>Showcase the academy's mission to bridge digital skill gaps in underserved communities</li>
+                <li>Provide detailed information about available courses (Digital Marketing, Data Analytics, UX/UI
+                    Design)</li>
+                <li>Share success stories from alumni to build credibility and trust</li>
+                <li>Offer valuable resources including industry trend articles, downloadable guides, and webinar
+                    announcements</li>
+                <li>Facilitate inquiries and course registrations through user-friendly forms and portals</li>
+                <li>Establish the academy as a thought leader in digital skills education</li>
+            </ul>
+        </section>
+
+        <section id="scenarios">
+            <h2>Scenarios</h2>
+            <p>These scenarios represent questions from potential students and partners visiting the website:</p>
+
+            <h3>Scenario 1: Prospective Student</h3>
+            <p><em>"I'm looking to transition into a digital marketing career but don't have any formal experience. What
+                    courses does Impact Digital Academy offer that would help me get started, and what kind of job
+                    placement support do you provide after completion?"</em></p>
+            <p>This scenario helps drive content around course details, prerequisites, career outcomes, and alumni
+                success stories.</p>
+
+            <h3>Scenario 2: Community Partner</h3>
+            <p><em>"Our nonprofit organization works with underserved youth and we're interested in partnering with
+                    Impact Digital Academy. How can we collaborate to provide digital skills training to our community
+                    members?"</em></p>
+            <p>This scenario informs content about partnership opportunities, community programs, and contact channels
+                for organizational inquiries.</p>
+
+            <h3>Scenario 3: Industry Professional</h3>
+            <p><em>"As a hiring manager in tech, I want to know if Impact Digital Academy graduates have the practical
+                    skills needed for entry-level UX/UI positions. What projects do students complete during the program
+                    and can I see examples of their work?"</em></p>
+            <p>This scenario drives content around portfolio showcases, curriculum details, and industry validation of
+                the program quality.</p>
+        </section>
+
+        <section id="color-scheme">
+            <h2>Color Scheme</h2>
+            <p>The selected color palette balances professionalism with approachability, reflecting the academy's
+                mission of making digital education accessible while maintaining credibility.</p>
+
+            <div class="color-scheme">
+                <div class="color-item">
+                    <div class="color-box primary-color"></div>
+                    <p><strong>Primary Blue (#1a5fb4)</strong><br>
+                        Headings, navigation, primary buttons</p>
+                </div>
+
+                <div class="color-item">
+                    <div class="color-box secondary-color"></div>
+                    <p><strong>Dark Gray (#333333)</strong><br>
+                        Body text, footer background</p>
+                </div>
+
+                <div class="color-item">
+                    <div class="color-box accent-color"></div>
+                    <p><strong>Accent Orange (#e95420)</strong><br>
+                        Highlights, CTAs, interactive elements</p>
+                </div>
+
+                <div class="color-item">
+                    <div class="color-box background-color"></div>
+                    <p><strong>Light Gray (#f8f9fa)</strong><br>
+                        Page background, secondary sections</p>
+                </div>
+
+                <div class="color-item">
+                    <div class="color-box card-color"></div>
+                    <p><strong>White (#ffffff)</strong><br>
+                        Content cards, form backgrounds</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="typography">
+            <h2>Typography</h2>
+            <p>Two fonts have been selected to create a clean, modern, and readable typographic system:</p>
+
+            <h3 style="font-family: 'Montserrat', sans-serif;">Montserrat (Headings)</h3>
+            <p>Montserrat is a geometric sans-serif font that communicates modernity, professionalism, and clarity. It
+                will be used for all headings (H1-H6) and the logo to establish strong visual hierarchy.</p>
+
+            <h3 style="font-family: 'Open Sans', sans-serif;">Open Sans (Body Text)</h3>
+            <p>Open Sans is a humanist sans-serif font optimized for legibility on screens. It will be used for all body
+                text, paragraphs, lists, and form inputs to ensure comfortable reading experiences across devices.</p>
+
+            <div style="border-left: 5px solid var(--accent-color); padding-left: 15px; margin-top: 20px;">
+                <h4>Typography Scale</h4>
+                <ul>
+                    <li><span style="font-family: 'Montserrat', sans-serif; font-size: 2.5rem;">H1: 2.5rem Montserrat
+                            Bold</span></li>
+                    <li><span style="font-family: 'Montserrat', sans-serif; font-size: 1.8rem;">H2: 1.8rem Montserrat
+                            Bold</span></li>
+                    <li><span style="font-family: 'Montserrat', sans-serif; font-size: 1.4rem;">H3: 1.4rem Montserrat
+                            Semibold</span></li>
+                    <li><span style="font-family: 'Open Sans', sans-serif; font-size: 1rem;">Body: 1rem Open Sans
+                            Regular</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="wireframe">
+            <h2>Wireframe</h2>
+            <p>Basic layout concepts for the Impact Digital Academy homepage:</p>
+
+            <div class="wireframe-container">
+                <div class="wireframe">
+                    <h3>Desktop/Tablet View</h3>
+                    <div class="wireframe-box desktop-layout">
+                        <div>
+                            <div class="wireframe-section">Logo & Navigation</div>
+                            <div class="wireframe-section">Sidebar: Quick Links</div>
+                            <div class="wireframe-section">Sidebar: Upcoming Events</div>
+                        </div>
+                        <div>
+                            <div class="wireframe-section">Hero Section with Mission Statement</div>
+                            <div class="wireframe-section">Featured Programs Highlights</div>
+                            <div class="wireframe-section">Success Stories/Alumni Testimonials</div>
+                            <div class="wireframe-section">Call-to-Action Section</div>
+                            <div class="wireframe-section">Footer with Contact & Social Links</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wireframe">
+                    <h3>Mobile View</h3>
+                    <div class="wireframe-box mobile-layout">
+                        <div class="wireframe-section">Logo & Hamburger Menu</div>
+                        <div class="wireframe-section">Hero Section with Mission</div>
+                        <div class="wireframe-section">Key Programs Summary</div>
+                        <div class="wireframe-section">Alumni Success Highlight</div>
+                        <div class="wireframe-section">Primary Call-to-Action</div>
+                        <div class="wireframe-section">Footer with Contact Info</div>
+                    </div>
+                </div>
+            </div>
+
+            <p style="margin-top: 20px;"><strong>Layout Principles:</strong> The desktop layout uses a sidebar for
+                secondary content, while the mobile layout stacks all elements vertically with a hamburger menu for
+                navigation. Both layouts prioritize the mission statement and call-to-action elements to support
+                conversion goals.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Impact Digital Academy Website Plan | This document uses the proposed color scheme and typography</p>
+            <p>Project based on the proposal: "Impact Digital Academy Website"</p>
+        </div>
+    </footer>
+</body>
+
+</html>
