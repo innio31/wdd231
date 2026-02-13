@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impact Digital Academy | Course Catalog & Modules</title>
+
+    <!-- SEO, Author, Social Sharing -->
+    <meta name="description"
+        content="Explore 15+ job-ready modules in UX/UI Design, Data Analytics, and Digital Marketing. Each module includes hands-on projects, industry tools, and portfolio pieces.">
+    <meta name="author" content="Emmanuel Ademuyiwa">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Impact Digital Academy – Course Modules">
+    <meta property="og:description"
+        content="Free-to-low-cost digital skills training with real projects. View full curriculum and quick-view module details.">
+    <meta property="og:image" content="images/og-courses.webp">
+    <meta property="og:url" content="https://yourdomain.github.io/wdd231/final/courses.html">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Impact Digital Academy – Courses">
+    <meta name="twitter:description" content="Digital skills for all. Browse our module catalog.">
+    <meta name="twitter:image" content="images/og-courses.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Fonts & CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <!-- JavaScript module – deferred, type module -->
+    <script type="module" src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <!-- Skip to main content – accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- HEADER with responsive navigation (identical to index for consistency) -->
+    <header>
+        <div class="container header-flex">
+            <div class="logo">Impact Digital Academy</div>
+            <button id="hamburger" aria-label="Menu" aria-expanded="false">☰</button>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="courses.html" class="nav-link active" aria-current="page">Courses</a></li>
+                    <li><a href="community.html" class="nav-link">Community</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main id="main-content" class="container">
+
+        <!-- PAGE HEADER -->
+        <section class="page-header" aria-labelledby="page-heading">
+            <h1 id="page-heading">Our programs: <span class="accent-text">build your digital future</span></h1>
+            <p class="page-description">Every course is broken into focused, project-based modules. Choose your path,
+                master the tools, and create portfolio-ready work. <strong>15+ modules available now.</strong></p>
+        </section>
+
+        <!-- DYNAMIC COURSE MODULES CONTAINER -->
+        <!-- This is where JavaScript will inject 15+ items from data/courses.json -->
+        <section class="course-catalog" aria-labelledby="catalog-heading">
+            <h2 id="catalog-heading" class="visually-hidden">Course module catalog</h2>
+            <div id="course-modules-container" class="module-grid-container">
+                <!-- Loading indicator – replaced by JS -->
+                <div class="loading-spinner" aria-live="polite">Loading course modules...</div>
+            </div>
+        </section>
+
+        <!-- SKILLS OVERVIEW – static content complementing dynamic data -->
+        <section class="skills-breakdown" aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Industry-validated skills</h2>
+            <p>Our curriculum is designed with input from hiring managers at top tech companies. Here's what you'll
+                master:</p>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>🎨 UX/UI Design</h3>
+                    <ul>
+                        <li>User research & persona creation</li>
+                        <li>Wireframing (low & high fidelity)</li>
+                        <li>Interactive prototyping in Figma</li>
+                        <li>Usability testing</li>
+                        <li>Design systems & handoff</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>📊 Data Analytics</h3>
+                    <ul>
+                        <li>SQL: queries, joins, aggregation</li>
+                        <li>Excel: pivot tables, dashboards</li>
+                        <li>Tableau / Power BI basics</li>
+                        <li>Python: pandas, data cleaning</li>
+                        <li>Statistical reasoning</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>📈 Digital Marketing</h3>
+                    <ul>
+                        <li>SEO & content strategy</li>
+                        <li>Google Analytics & Tag Manager</li>
+                        <li>Social media advertising</li>
+                        <li>Email marketing (Mailchimp)</li>
+                        <li>Campaign ROI analysis</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- CERTIFICATION PATHWAY – additional trust signal -->
+        <section class="certification" aria-labelledby="cert-heading">
+            <div class="cert-content">
+                <h2 id="cert-heading">Earn micro‑credentials + career support</h2>
+                <p>Complete any track to receive a verified digital badge. Graduates who finish 5+ modules get 1:1
+                    career coaching and access to our hiring partner network.</p>
+                <a href="community.html#partnership-form" class="btn btn-outline">Inquire about group enrollment</a>
+            </div>
+        </section>
+
+        <!-- THEME TOGGLE – for local storage demonstration (global component) -->
+        <div class="theme-toggle-container">
+            <label for="theme-toggle" class="theme-label">
+                <span>🌙</span>
+                <span>High contrast</span>
+            </label>
+            <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox"
+                aria-label="Switch to high contrast mode">
+        </div>
+
+    </main>
+
+    <!-- FOOTER – consistent with homepage -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h3>Impact Digital Academy</h3>
+                <p>Bridging the digital divide through accessible, job-focused education.</p>
+                <p>&copy; 2025 Impact Digital Academy. All rights reserved.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Navigate</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="community.html">Community & Partners</a></li>
+                    <li><a href="attributions.html">Attributions</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="community.html#partnership-form">Inquire</a></li>
+                    <li><a href="#" id="video-demo-link">Project video</a></li>
+                </ul>
+                <p><small><a href="https://youtu.be/your-video-id" target="_blank" rel="noopener">📹 Watch 3-min demo
+                            (JS requirements)</a></small></p>
+            </div>
+            <div class="footer-section">
+                <h4>Meta</h4>
+                <p><small>Author: Emmanuel Ademuyiwa | WDD 231</small></p>
+            </div>
+        </div>
+        <div class="footer-meta">
+            <p>meta name="author" content="Emmanuel Ademuyiwa" | Open Graph implemented</p>
+        </div>
+    </footer>
+
+    <!-- MODAL – accessible dialog for module quick view -->
+    <div id="module-modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+        <div class="modal-content">
+            <button class="close-modal" aria-label="Close modal">×</button>
+            <h3 id="modal-title" class="modal-heading">Module syllabus</h3>
+            <div id="modal-details">
+                <!-- Dynamic content injected by JavaScript (modal.js) -->
+                <p><em>Loading details...</em></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hidden attribution confirmation -->
+    <div style="display: none;">Attributions: <a href="attributions.html">Resource credits</a></div>
+</body>
+
+</html>

@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impact Digital Academy | Form Submitted</title>
+
+    <!-- SEO, Author, Social Sharing -->
+    <meta name="description"
+        content="Thank you for reaching out to Impact Digital Academy. Your partnership inquiry has been received.">
+    <meta name="author" content="Emmanuel Ademuyiwa">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Impact Digital Academy – Form Submitted">
+    <meta property="og:description"
+        content="Thank you for your interest in partnering with us. We'll respond within 2 business days.">
+    <meta property="og:image" content="images/og-community.webp">
+    <meta property="og:url" content="https://yourdomain.github.io/wdd231/final/form-action.html">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Impact Digital Academy – Form Submitted">
+    <meta name="twitter:description" content="Thank you for your partnership inquiry.">
+    <meta name="twitter:image" content="images/og-community.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Fonts & CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <!-- JavaScript module – deferred, type module -->
+    <script type="module" src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <!-- Skip to main content – accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- HEADER with responsive navigation -->
+    <header>
+        <div class="container header-flex">
+            <div class="logo">Impact Digital Academy</div>
+            <button id="hamburger" aria-label="Menu" aria-expanded="false">☰</button>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="courses.html" class="nav-link">Courses</a></li>
+                    <li><a href="community.html" class="nav-link">Community</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main id="main-content" class="container">
+
+        <!-- FORM CONFIRMATION HEADER -->
+        <section class="page-header confirmation-header" aria-labelledby="confirmation-heading">
+            <div class="confirmation-icon">✅</div>
+            <h1 id="confirmation-heading">Thank you for reaching out</h1>
+            <p class="page-description">Your partnership inquiry has been received. We're excited to explore how we can
+                work together.</p>
+        </section>
+
+        <!-- FORM DATA DISPLAY SECTION -->
+        <section class="form-data-display" aria-labelledby="data-heading">
+            <h2 id="data-heading" class="visually-hidden">Submitted information</h2>
+
+            <div class="submission-card">
+                <div class="submission-header">
+                    <span class="submission-label">📋 Submission summary</span>
+                    <span class="submission-date" id="current-date"></span>
+                </div>
+
+                <!-- Dynamic data injected from URL parameters -->
+                <dl class="submission-details" id="submission-details">
+                    <!-- JavaScript will populate this definition list -->
+                    <div class="loading-spinner">Processing your submission...</div>
+                </dl>
+
+                <div class="submission-note">
+                    <p>A confirmation email has been sent to <strong id="confirm-email-display">your provided
+                            email</strong>. A partnership coordinator will follow up within 2 business days.</p>
+                </div>
+            </div>
+
+            <!-- NEXT STEPS / WHAT TO EXPECT -->
+            <div class="next-steps-card">
+                <h3>What happens next?</h3>
+                <ol class="next-steps-list">
+                    <li>
+                        <span class="step-badge">1</span>
+                        <div class="step-content">
+                            <strong>Review (1 business day)</strong>
+                            <p>Our partnerships team reviews your inquiry and matches you with the right coordinator.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="step-badge">2</span>
+                        <div class="step-content">
+                            <strong>Discovery call (2-3 business days)</strong>
+                            <p>We'll email you to schedule a 30-minute video call to learn more about your community and
+                                goals.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="step-badge">3</span>
+                        <div class="step-content">
+                            <strong>Partnership design</strong>
+                            <p>Together, we'll outline a pilot program, integration plan, or hiring pathway tailored to
+                                your needs.</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+
+            <!-- CALL TO ACTIONS -->
+            <div class="confirmation-actions">
+                <a href="community.html#partnership-form" class="btn btn-secondary">← Submit another inquiry</a>
+                <a href="courses.html" class="btn btn-primary">Explore our courses</a>
+                <a href="index.html" class="btn btn-outline">Return home</a>
+            </div>
+        </section>
+
+        <!-- THEME TOGGLE – for local storage demonstration -->
+        <div class="theme-toggle-container">
+            <label for="theme-toggle" class="theme-label">
+                <span>🌙</span>
+                <span>High contrast</span>
+            </label>
+            <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox"
+                aria-label="Switch to high contrast mode">
+        </div>
+
+    </main>
+
+    <!-- FOOTER – consistent with all pages -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h3>Impact Digital Academy</h3>
+                <p>Bridging the digital divide through accessible, job-focused education.</p>
+                <p>&copy; 2025 Impact Digital Academy. All rights reserved.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Navigate</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="community.html">Community & Partners</a></li>
+                    <li><a href="attributions.html">Attributions</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="community.html#partnership-form">Inquire</a></li>
+                    <li><a href="#" id="video-demo-link">Project video</a></li>
+                </ul>
+                <p><small><a href="https://youtu.be/your-video-id" target="_blank" rel="noopener">📹 Watch 3-min demo
+                            (JS requirements)</a></small></p>
+            </div>
+            <div class="footer-section">
+                <h4>Meta</h4>
+                <p><small>Author: Emmanuel Ademuyiwa | WDD 231</small></p>
+            </div>
+        </div>
+        <div class="footer-meta">
+            <p>meta name="author" content="Emmanuel Ademuyiwa" | Open Graph implemented</p>
+        </div>
+    </footer>
+
+    <!-- MODAL – included globally for consistency -->
+    <div id="module-modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+        <div class="modal-content">
+            <button class="close-modal" aria-label="Close modal">×</button>
+            <h3 id="modal-title" class="modal-heading">Module syllabus</h3>
+            <div id="modal-details"></div>
+        </div>
+    </div>
+
+    <!-- Hidden attribution confirmation -->
+    <div style="display: none;">Attributions: <a href="attributions.html">Resource credits</a></div>
+
+    <!-- SCRIPT TO PARSE AND DISPLAY URL PARAMETERS -->
+    <script>
+        /**
+         * Form Action Page Script
+         * Displays submitted form data from URL query parameters
+         * Fulfills: "Display the form data on a form action page"
+         */
+        (function () {
+            // Get URL parameters
+            const params = new URLSearchParams(window.location.search);
+
+            // Update current date
+            const dateElement = document.getElementById('current-date');
+            if (dateElement) {
+                const now = new Date();
+                const options = { year: 'numeric', month: 'long', day: 'numeric' };
+                dateElement.textContent = now.toLocaleDateString('en-US', options);
+            }
+
+            // Container for submission details
+            const detailsContainer = document.getElementById('submission-details');
+            if (!detailsContainer) return;
+
+            // Clear loading spinner
+            detailsContainer.innerHTML = '';
+
+            // Check if there are any parameters
+            if (params.size === 0) {
+                // No form data – likely accessed directly
+                detailsContainer.innerHTML = `
+                    <div class="no-data-message">
+                        <p>No form submission detected.</p>
+                        <p><a href="community.html#partnership-form">→ Return to the partnership form</a></p>
+                    </div>
+                `;
+                return;
+            }
+
+            // Define friendly labels and formatting for each parameter
+            const fieldConfig = {
+                'orgName': { label: 'Organization name', icon: '🏢' },
+                'repName': { label: 'Contact name', icon: '👤' },
+                'repEmail': { label: 'Email address', icon: '📧' },
+                'orgType': {
+                    label: 'Organization type',
+                    icon: '📋',
+                    format: (value) => {
+                        const map = {
+                            'nonprofit': 'Nonprofit / NGO',
+                            'library': 'Public library',
+                            'school': 'K-12 school',
+                            'university': 'College / University',
+                            'corporate': 'Corporate / business',
+                            'government': 'Government / municipal',
+                            'individual': 'Individual / self'
+                        };
+                        return map[value] || value || 'Not specified';
+                    }
+                },
+                'interest': {
+                    label: 'Partnership interest',
+                    icon: '🤝',
+                    format: (value) => {
+                        const map = {
+                            'host-cohort': 'Host a no-cost training cohort',
+                            'curriculum-integration': 'Integrate curriculum into existing program',
+                            'hire-graduates': 'Hire our graduates',
+                            'sponsor-scholarships': 'Sponsor scholarships',
+                            'volunteer-mentor': 'Volunteer as mentor / speaker',
+                            'other': 'Other'
+                        };
+                        return map[value] || value || 'Not specified';
+                    }
+                },
+                'message': { label: 'Additional details', icon: '💬' },
+                'newsletter': {
+                    label: 'Newsletter consent',
+                    icon: '📬',
+                    format: (value) => value === 'yes' ? 'Subscribed' : 'Not subscribed'
+                }
+            };
+
+            // Build the definition list dynamically
+            let hasData = false;
+
+            // Helper function to create a formatted row
+            function createDetailRow(paramName, rawValue) {
+                // Skip empty values or checkbox when unchecked (no parameter)
+                if (!rawValue || rawValue.trim() === '') return '';
+
+                const config = fieldConfig[paramName] || {
+                    label: paramName.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase()),
+                    icon: '📌',
+                    format: (v) => v
+                };
+
+                const formattedValue = config.format ? config.format(rawValue) : rawValue;
+
+                return `
+                    <div class="detail-row">
+                        <dt><span class="detail-icon">${config.icon}</span> ${config.label}</dt>
+                        <dd>${formattedValue}</dd>
+                    </div>
+                `;
+            }
+
+            // Process known fields in specific order
+            const orderedFields = ['repName', 'orgName', 'repEmail', 'orgType', 'interest', 'message', 'newsletter'];
+            let detailsHTML = '<div class="detail-grid">';
+
+            orderedFields.forEach(field => {
+                if (params.has(field)) {
+                    const value = params.get(field);
+                    detailsHTML += createDetailRow(field, value);
+                    hasData = true;
+
+                    // Special case: store email for the confirmation message
+                    if (field === 'repEmail') {
+                        const emailDisplay = document.getElementById('confirm-email-display');
+                        if (emailDisplay) emailDisplay.textContent = value;
+                    }
+                }
+            });
+
+            // Add any additional/original parameters not in our ordered list
+            params.forEach((value, key) => {
+                if (!orderedFields.includes(key) && !key.startsWith('_')) {
+                    detailsHTML += createDetailRow(key, value);
+                    hasData = true;
+                }
+            });
+
+            detailsHTML += '</div>';
+
+            // If we still have no data, show fallback
+            if (!hasData) {
+                detailsContainer.innerHTML = `
+                    <div class="no-data-message">
+                        <p>No form data was submitted.</p>
+                        <p><a href="community.html#partnership-form">→ Complete the partnership form</a></p>
+                    </div>
+                `;
+            } else {
+                detailsContainer.innerHTML = detailsHTML;
+            }
+        })();
+    </script>
+
+    <!-- Additional inline styles specific to form action page -->
+    <style>
+        /* These styles complement the main siteplan.css */
+        .confirmation-header {
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        .confirmation-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .submission-card,
+        .next-steps-card {
+            background-color: var(--card-color, #ffffff);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e9ecef;
+        }
+
+        .submission-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 2px solid var(--accent-color, #e95420);
+        }
+
+        .submission-label {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--primary-color, #1a5fb4);
+        }
+
+        .submission-date {
+            color: var(--secondary-color, #333333);
+            font-size: 0.9rem;
+        }
+
+        .detail-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.25rem;
+        }
+
+        .detail-row {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            align-items: baseline;
+            padding: 0.5rem 0;
+            border-bottom: 1px dashed #e0e0e0;
+        }
+
+        .detail-row:last-child {
+            border-bottom: none;
+        }
+
+        .detail-row dt {
+            font-weight: 600;
+            color: var(--secondary-color, #333333);
+            font-size: 0.95rem;
+        }
+
+        .detail-row dd {
+            margin: 0;
+            color: #1e293b;
+            font-weight: 500;
+            word-break: break-word;
+        }
+
+        .detail-icon {
+            margin-right: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .submission-note {
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #e9ecef;
+            background-color: #f8f9fa;
+            padding: 1.25rem;
+            border-radius: 8px;
+            font-style: italic;
+        }
+
+        .next-steps-card h3 {
+            color: var(--primary-color, #1a5fb4);
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+            border-left: 5px solid var(--accent-color, #e95420);
+            padding-left: 1rem;
+        }
+
+        .next-steps-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .next-steps-list li {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.25rem;
+            align-items: flex-start;
+        }
+
+        .step-badge {
+            background-color: var(--primary-color, #1a5fb4);
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            flex-shrink: 0;
+            margin-top: 0.2rem;
+        }
+
+        .step-content {
+            flex: 1;
+        }
+
+        .step-content strong {
+            display: block;
+            margin-bottom: 0.25rem;
+            color: var(--secondary-color, #333333);
+        }
+
+        .step-content p {
+            margin: 0;
+            color: #5a6a7a;
+            font-size: 0.95rem;
+        }
+
+        .confirmation-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .no-data-message {
+            text-align: center;
+            padding: 2rem;
+            background-color: #fff3e0;
+            border-radius: 8px;
+            border-left: 5px solid var(--accent-color, #e95420);
+        }
+
+        .no-data-message a {
+            color: var(--primary-color, #1a5fb4);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .no-data-message a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 640px) {
+            .detail-row {
+                grid-template-columns: 1fr;
+                gap: 0.25rem;
+            }
+
+            .submission-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+
+            .confirmation-actions {
+                flex-direction: column;
+            }
+
+            .confirmation-actions .btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</body>
+
+</html>

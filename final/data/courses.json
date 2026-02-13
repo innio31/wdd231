@@ -1,0 +1,382 @@
+{
+    "courses": [
+        {
+            "id": "uxui",
+            "courseName": "UX/UI Design",
+            "courseCode": "UX101",
+            "description": "Master user-centered design from research to high-fidelity prototypes. Build a portfolio-ready case study.",
+            "instructor": "Alex Morgan",
+            "icon": "🎨",
+            "modules": [
+                {
+                    "id": "ux-mod-1",
+                    "title": "User Research & Empathy",
+                    "duration": "2 weeks",
+                    "project": "Conduct 3 user interviews and create empathy maps",
+                    "skills": [
+                        "User interviews",
+                        "Empathy maps",
+                        "Affinity diagrams",
+                        "Problem statements"
+                    ],
+                    "syllabus": "Learn how to plan and conduct effective user interviews. Synthesize qualitative data into empathy maps and affinity diagrams. Define problem statements that drive design decisions.",
+                    "tools": [
+                        "Zoom",
+                        "Miro",
+                        "Google Docs"
+                    ],
+                    "prerequisites": "None",
+                    "career_outcomes": "Junior UX Researcher, UX Assistant"
+                },
+                {
+                    "id": "ux-mod-2",
+                    "title": "Information Architecture & User Flows",
+                    "duration": "1.5 weeks",
+                    "project": "Create a sitemap and user flow for a mobile app",
+                    "skills": [
+                        "Card sorting",
+                        "Sitemaps",
+                        "User flows",
+                        "Task analysis"
+                    ],
+                    "syllabus": "Organize content intuitively through card sorting and tree testing. Map user journeys and task flows to identify friction points.",
+                    "tools": [
+                        "Miro",
+                        "Whimsical",
+                        "Figma"
+                    ],
+                    "prerequisites": "User Research & Empathy (recommended)",
+                    "career_outcomes": "UX Designer, Information Architect"
+                },
+                {
+                    "id": "ux-mod-3",
+                    "title": "Wireframing: Low to High Fidelity",
+                    "duration": "2.5 weeks",
+                    "project": "Design 10+ wireframes progressing from sketches to high-fidelity screens",
+                    "skills": [
+                        "Sketching",
+                        "Digital wireframing",
+                        "Layout design",
+                        "Visual hierarchy"
+                    ],
+                    "syllabus": "Start with paper sketches and grayscale wireframes. Progress to high-fidelity layouts with proper spacing, typography, and color.",
+                    "tools": [
+                        "Figma",
+                        "Adobe XD",
+                        "Pen & paper"
+                    ],
+                    "prerequisites": "None",
+                    "career_outcomes": "UI Designer, Product Designer"
+                },
+                {
+                    "id": "ux-mod-4",
+                    "title": "Interactive Prototyping",
+                    "duration": "2 weeks",
+                    "project": "Build a clickable prototype with 15+ interconnected screens",
+                    "skills": [
+                        "Interactive components",
+                        "Micro-interactions",
+                        "Prototyping",
+                        "Gestalt principles"
+                    ],
+                    "syllabus": "Transform static wireframes into interactive prototypes. Add transitions, hover states, and basic micro-interactions to simulate real product behavior.",
+                    "tools": [
+                        "Figma",
+                        "ProtoPie",
+                        "Principle"
+                    ],
+                    "prerequisites": "Wireframing: Low to High Fidelity",
+                    "career_outcomes": "UI Designer, Product Designer, Prototyper"
+                },
+                {
+                    "id": "ux-mod-5",
+                    "title": "Usability Testing & Iteration",
+                    "duration": "1.5 weeks",
+                    "project": "Conduct 5 usability tests and document 3 key iterations",
+                    "skills": [
+                        "Test planning",
+                        "Moderated testing",
+                        "Finding synthesis",
+                        "Design iteration"
+                    ],
+                    "syllabus": "Recruit participants, write test scripts, and conduct moderated usability sessions. Analyze findings and prioritize design changes.",
+                    "tools": [
+                        "Lookback",
+                        "UserTesting",
+                        "Maze",
+                        "Figma"
+                    ],
+                    "prerequisites": "Interactive Prototyping",
+                    "career_outcomes": "UX Researcher, UX Designer"
+                },
+                {
+                    "id": "ux-mod-6",
+                    "title": "Portfolio Polish & Case Study Writing",
+                    "duration": "2 weeks",
+                    "project": "Publish a complete case study on Behance or personal portfolio",
+                    "skills": [
+                        "Storytelling",
+                        "Visual presentation",
+                        "Case study structure",
+                        "Personal branding"
+                    ],
+                    "syllabus": "Transform your project into a compelling case study. Learn to frame problems, showcase process, and highlight impact.",
+                    "tools": [
+                        "Notion",
+                        "Figma",
+                        "Webflow",
+                        "Adobe Portfolio"
+                    ],
+                    "prerequisites": "All previous UX/UI modules",
+                    "career_outcomes": "UX/UI Designer, Portfolio-ready candidate"
+                }
+            ]
+        },
+        {
+            "id": "data",
+            "courseName": "Data Analytics",
+            "courseCode": "DA201",
+            "description": "Turn raw data into actionable insights. Learn SQL, Excel, Tableau, and Python for real-world analysis.",
+            "instructor": "Jordan Chen",
+            "icon": "📊",
+            "modules": [
+                {
+                    "id": "data-mod-1",
+                    "title": "SQL for Beginners: Queries & Aggregations",
+                    "duration": "2 weeks",
+                    "project": "Write 20+ SQL queries on a sales database",
+                    "skills": [
+                        "SELECT",
+                        "WHERE",
+                        "JOIN",
+                        "GROUP BY",
+                        "HAVING"
+                    ],
+                    "syllabus": "Master fundamental SQL syntax. Query relational databases using joins, aggregations, and subqueries. Filter and sort data efficiently.",
+                    "tools": [
+                        "MySQL",
+                        "PostgreSQL",
+                        "DB Browser for SQLite"
+                    ],
+                    "prerequisites": "None",
+                    "career_outcomes": "Junior Data Analyst, SQL Developer"
+                },
+                {
+                    "id": "data-mod-2",
+                    "title": "Excel: Beyond Spreadsheets",
+                    "duration": "1.5 weeks",
+                    "project": "Build an interactive sales dashboard with pivot tables",
+                    "skills": [
+                        "Pivot tables",
+                        "VLOOKUP/XLOOKUP",
+                        "Conditional formatting",
+                        "Data validation"
+                    ],
+                    "syllabus": "Move beyond basic formulas. Create dynamic dashboards, automate with pivot tables, and clean messy datasets.",
+                    "tools": [
+                        "Microsoft Excel",
+                        "Google Sheets"
+                    ],
+                    "prerequisites": "Basic spreadsheet familiarity",
+                    "career_outcomes": "Business Analyst, Operations Analyst"
+                },
+                {
+                    "id": "data-mod-3",
+                    "title": "Data Visualization with Tableau",
+                    "duration": "2 weeks",
+                    "project": "Design a 5-dashboard story on public dataset",
+                    "skills": [
+                        "Connecting data",
+                        "Visual best practices",
+                        "Dashboard design",
+                        "Storytelling"
+                    ],
+                    "syllabus": "Connect to various data sources and build powerful visualizations. Learn chart selection, color theory, and dashboard layout.",
+                    "tools": [
+                        "Tableau Public",
+                        "Tableau Desktop"
+                    ],
+                    "prerequisites": "SQL for Beginners (recommended)",
+                    "career_outcomes": "Data Visualization Specialist, BI Analyst"
+                },
+                {
+                    "id": "data-mod-4",
+                    "title": "Python Fundamentals for Analysts",
+                    "duration": "3 weeks",
+                    "project": "Analyze e-commerce data using pandas and matplotlib",
+                    "skills": [
+                        "Python basics",
+                        "pandas",
+                        "matplotlib",
+                        "Jupyter notebooks"
+                    ],
+                    "syllabus": "Introduction to Python programming for data analysis. Manipulate DataFrames with pandas, create visualizations, and export findings.",
+                    "tools": [
+                        "Jupyter",
+                        "pandas",
+                        "matplotlib",
+                        "Anaconda"
+                    ],
+                    "prerequisites": "None, but SQL/Excel helpful",
+                    "career_outcomes": "Junior Data Analyst, Python Analyst"
+                },
+                {
+                    "id": "data-mod-5",
+                    "title": "Data Cleaning & Wrangling",
+                    "duration": "2 weeks",
+                    "project": "Clean and prepare a messy real-world dataset",
+                    "skills": [
+                        "Handling nulls",
+                        "Data types",
+                        "String parsing",
+                        "Merge/reshape"
+                    ],
+                    "syllabus": "80% of analytics is cleaning data. Master techniques to handle missing values, inconsistent formatting, and messy joins.",
+                    "tools": [
+                        "Python (pandas)",
+                        "Excel Power Query",
+                        "OpenRefine"
+                    ],
+                    "prerequisites": "Python Fundamentals or Excel module",
+                    "career_outcomes": "Data Analyst, Data Engineer (entry)"
+                }
+            ]
+        },
+        {
+            "id": "marketing",
+            "courseName": "Digital Marketing",
+            "courseCode": "DM301",
+            "description": "Drive growth through SEO, social media, email, and analytics. Build campaigns that convert.",
+            "instructor": "Priya Patel",
+            "icon": "📈",
+            "modules": [
+                {
+                    "id": "mkt-mod-1",
+                    "title": "SEO Strategy & Keyword Research",
+                    "duration": "2 weeks",
+                    "project": "Conduct keyword audit and optimize a sample landing page",
+                    "skills": [
+                        "Keyword research",
+                        "On-page SEO",
+                        "Technical SEO",
+                        "Content optimization"
+                    ],
+                    "syllabus": "Understand search engine algorithms. Perform keyword research using professional tools. Optimize meta tags, headers, and content structure.",
+                    "tools": [
+                        "Google Keyword Planner",
+                        "Ahrefs (demo)",
+                        "SEMrush (demo)",
+                        "Screaming Frog"
+                    ],
+                    "prerequisites": "None",
+                    "career_outcomes": "SEO Specialist, Content Marketer"
+                },
+                {
+                    "id": "mkt-mod-2",
+                    "title": "Google Analytics & Data-Driven Marketing",
+                    "duration": "2 weeks",
+                    "project": "Set up a GA4 property and analyze 30 days of demo data",
+                    "skills": [
+                        "GA4 setup",
+                        "Audience reports",
+                        "Acquisition channels",
+                        "Conversion tracking"
+                    ],
+                    "syllabus": "Navigate Google Analytics 4. Track user behavior, measure campaign performance, and extract actionable insights.",
+                    "tools": [
+                        "Google Analytics 4",
+                        "Google Tag Manager"
+                    ],
+                    "prerequisites": "Basic marketing concepts",
+                    "career_outcomes": "Marketing Analyst, Digital Marketing Coordinator"
+                },
+                {
+                    "id": "mkt-mod-3",
+                    "title": "Social Media Advertising",
+                    "duration": "2 weeks",
+                    "project": "Create and analyze a mock ad campaign on Meta Ads Manager",
+                    "skills": [
+                        "Audience targeting",
+                        "Ad creative",
+                        "Budget optimization",
+                        "A/B testing"
+                    ],
+                    "syllabus": "Plan and execute paid social campaigns. Define audiences, set budgets, write ad copy, and optimize for ROAS.",
+                    "tools": [
+                        "Meta Ads Manager",
+                        "LinkedIn Campaign Manager",
+                        "TikTok Ads"
+                    ],
+                    "prerequisites": "Google Analytics module (helpful)",
+                    "career_outcomes": "Social Media Manager, Paid Media Specialist"
+                },
+                {
+                    "id": "mkt-mod-4",
+                    "title": "Email Marketing & Automation",
+                    "duration": "1.5 weeks",
+                    "project": "Build a 5-email welcome sequence in Mailchimp",
+                    "skills": [
+                        "List building",
+                        "Segmentation",
+                        "Email copy",
+                        "Automation workflows"
+                    ],
+                    "syllabus": "Craft effective email campaigns that drive opens and clicks. Set up automated sequences and measure performance metrics.",
+                    "tools": [
+                        "Mailchimp",
+                        "Klaviyo",
+                        "ConvertKit"
+                    ],
+                    "prerequisites": "None",
+                    "career_outcomes": "Email Marketing Specialist, CRM Coordinator"
+                },
+                {
+                    "id": "mkt-mod-5",
+                    "title": "Content Marketing & Strategy",
+                    "duration": "2 weeks",
+                    "project": "Develop a 30-day content calendar and two sample assets",
+                    "skills": [
+                        "Content strategy",
+                        "Blog writing",
+                        "Visual content",
+                        "Distribution"
+                    ],
+                    "syllabus": "Create content that attracts and retains audiences. Plan editorial calendars, repurpose content, and measure engagement.",
+                    "tools": [
+                        "Canva",
+                        "Notion",
+                        "Trello",
+                        "WordPress"
+                    ],
+                    "prerequisites": "SEO Strategy module (recommended)",
+                    "career_outcomes": "Content Strategist, Brand Marketer"
+                },
+                {
+                    "id": "mkt-mod-6",
+                    "title": "Marketing Analytics & ROI",
+                    "duration": "1.5 weeks",
+                    "project": "Calculate ROAS and CAC for a multi-channel campaign",
+                    "skills": [
+                        "ROI calculation",
+                        "CAC",
+                        "LTV",
+                        "Multi-touch attribution"
+                    ],
+                    "syllabus": "Connect marketing spend to business outcomes. Learn to calculate customer acquisition cost, lifetime value, and campaign ROI.",
+                    "tools": [
+                        "Google Looker Studio",
+                        "Excel",
+                        "Attribution models"
+                    ],
+                    "prerequisites": "Google Analytics module",
+                    "career_outcomes": "Marketing Analyst, Growth Marketer"
+                }
+            ]
+        }
+    ],
+    "meta": {
+        "totalModules": 17,
+        "lastUpdated": "2025-02-13",
+        "version": "1.0"
+    }
+}

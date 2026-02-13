@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impact Digital Academy | Community Partnerships & Impact</title>
+
+    <!-- SEO, Author, Social Sharing -->
+    <meta name="description"
+        content="Partner with Impact Digital Academy to bring no-cost digital skills training to your community. Nonprofits, schools, and employers: let's collaborate.">
+    <meta name="author" content="Emmanuel Ademuyiwa">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Impact Digital Academy – Partner With Us">
+    <meta property="og:description"
+        content="Together we can bridge the digital divide. Inquire about community partnerships, group enrollments, or hiring our graduates.">
+    <meta property="og:image" content="images/og-community.webp">
+    <meta property="og:url" content="https://yourdomain.github.io/wdd231/final/community.html">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Impact Digital Academy – Community">
+    <meta name="twitter:description" content="Partner with us to create digital opportunity.">
+    <meta name="twitter:image" content="images/og-community.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Fonts & CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <!-- JavaScript module – deferred, type module -->
+    <script type="module" src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <!-- Skip to main content – accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- HEADER with responsive navigation -->
+    <header>
+        <div class="container header-flex">
+            <div class="logo">Impact Digital Academy</div>
+            <button id="hamburger" aria-label="Menu" aria-expanded="false">☰</button>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="courses.html" class="nav-link">Courses</a></li>
+                    <li><a href="community.html" class="nav-link active" aria-current="page">Community</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main id="main-content" class="container">
+
+        <!-- PAGE HEADER – mission-aligned -->
+        <section class="page-header" aria-labelledby="page-heading">
+            <h1 id="page-heading">Create impact <span class="accent-text">together</span></h1>
+            <p class="page-description">We don't just teach digital skills — we build ecosystems of opportunity. Whether
+                you're a nonprofit, school, employer, or advocate, there's a place for you here.</p>
+        </section>
+
+        <!-- PARTNERSHIP MODELS – static value props -->
+        <section class="partnership-models" aria-labelledby="models-heading">
+            <h2 id="models-heading">Ways to partner</h2>
+            <div class="models-grid">
+                <article class="model-card">
+                    <div class="model-icon">🏛️</div>
+                    <h3>Nonprofit & library</h3>
+                    <p>Bring no-cost cohorts to your community. We provide instructors, curriculum, and career support —
+                        you provide the space and outreach.</p>
+                    <span class="model-tag">Currently in 12 cities</span>
+                </article>
+                <article class="model-card">
+                    <div class="model-icon">🏫</div>
+                    <h3>School & university</h3>
+                    <p>Integrate our modules into workforce development programs, continuing education, or as
+                        supplemental bootcamps for students.</p>
+                    <span class="model-tag">Credit-eligible</span>
+                </article>
+                <article class="model-card">
+                    <div class="model-icon">💼</div>
+                    <h3>Employer & corporate</h3>
+                    <p>Upskill your entry-level talent, sponsor scholarships, or get early access to our graduate talent
+                        pipeline.</p>
+                    <span class="model-tag">50+ hiring partners</span>
+                </article>
+                <article class="model-card">
+                    <div class="model-icon">🤝</div>
+                    <h3>Individual advocate</h3>
+                    <p>Volunteer as a mentor, guest speaker, or career coach. Your expertise can shape the next
+                        generation of digital professionals.</p>
+                    <span class="model-tag">Apply to mentor</span>
+                </article>
+            </div>
+        </section>
+
+        <!-- IMPACT METRICS – static but can be made dynamic if desired -->
+        <section class="impact-metrics" aria-labelledby="metrics-heading">
+            <h2 id="metrics-heading" class="visually-hidden">Our collective impact</h2>
+            <div class="metrics-grid">
+                <div class="metric">
+                    <span class="metric-number">500+</span>
+                    <span class="metric-label">Graduates since 2023</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-number">87%</span>
+                    <span class="metric-label">Job placement within 6 months</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-number">32</span>
+                    <span class="metric-label">Community partners</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-number">15k+</span>
+                    <span class="metric-label">Hours of free instruction delivered</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SUCCESS STORIES – dynamic alumni highlight container (can be populated from JSON) -->
+        <section id="success" class="success-stories-full" aria-labelledby="stories-heading">
+            <h2 id="stories-heading">Success stories from our community</h2>
+            <p class="section-subhead">Real graduates, real careers — powered by digital skills and partnership.</p>
+            <!-- Dynamic container for alumni stories – can be populated by JS from courses.json or separate community.json -->
+            <div id="alumni-full-container" class="story-grid-large">
+                <!-- Loading indicator – replaced by JS if we choose to load data here -->
+                <div class="loading-spinner" aria-live="polite">Loading alumni stories...</div>
+            </div>
+            <div class="center-cta">
+                <a href="#" class="btn btn-outline" id="load-more-stories">Load more stories →</a>
+            </div>
+        </section>
+
+        <!-- HTML FORM – Partnership Inquiry (REQUIRED) -->
+        <section class="partnership-form-section" aria-labelledby="form-heading">
+            <h2 id="form-heading">📋 Start a conversation</h2>
+            <p>Tell us about your organization or idea. We'll respond within 2 business days.</p>
+
+            <form id="partnership-form" action="form-action.html" method="get" class="partnership-form">
+                <fieldset>
+                    <legend>Organization & contact details</legend>
+
+                    <div class="form-row">
+                        <label for="org-name">Organization name *</label>
+                        <input type="text" id="org-name" name="orgName" placeholder="e.g., Community Tech Center"
+                            required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="rep-name">Your full name *</label>
+                        <input type="text" id="rep-name" name="repName" placeholder="Alex Rivera" required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="rep-email">Work email *</label>
+                        <input type="email" id="rep-email" name="repEmail" placeholder="alex@organization.org" required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="org-type">Organization type</label>
+                        <select id="org-type" name="orgType">
+                            <option value="">-- Please select --</option>
+                            <option value="nonprofit">Nonprofit / NGO</option>
+                            <option value="library">Public library</option>
+                            <option value="school">K-12 school</option>
+                            <option value="university">College / University</option>
+                            <option value="corporate">Corporate / business</option>
+                            <option value="government">Government / municipal</option>
+                            <option value="individual">Individual / self</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="partnership-interest">Partnership interest *</label>
+                        <select id="partnership-interest" name="interest" required>
+                            <option value="">-- Please select --</option>
+                            <option value="host-cohort">Host a no-cost training cohort</option>
+                            <option value="curriculum-integration">Integrate curriculum into existing program</option>
+                            <option value="hire-graduates">Hire our graduates</option>
+                            <option value="sponsor-scholarships">Sponsor scholarships</option>
+                            <option value="volunteer-mentor">Volunteer as mentor / speaker</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="message">Tell us more about your community or goals</label>
+                        <textarea id="message" name="message" rows="5"
+                            placeholder="What population do you serve? What outcomes are you hoping to achieve?"></textarea>
+                    </div>
+
+                    <div class="form-row checkbox-row">
+                        <input type="checkbox" id="newsletter-consent" name="newsletter" value="yes" checked>
+                        <label for="newsletter-consent">Yes, I'd like to receive occasional updates about Impact Digital
+                            Academy partnerships (you can unsubscribe anytime).</label>
+                    </div>
+
+                    <div class="form-row form-submit">
+                        <input type="submit" value="Submit inquiry →" class="btn btn-primary btn-large">
+                    </div>
+                    <p class="form-note">* Required fields. This form submits to form-action.html (method=get).</p>
+                </fieldset>
+            </form>
+        </section>
+
+        <!-- FAQ / COLLABORATION STEPS – additional trust -->
+        <section class="collaboration-steps" aria-labelledby="steps-heading">
+            <h2 id="steps-heading">How collaboration works</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <h3>Inquiry</h3>
+                    <p>You complete the form above. We learn about your community and goals.</p>
+                </div>
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <h3>Discovery call</h3>
+                    <p>30-minute video call to explore partnership models and answer questions.</p>
+                </div>
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <h3>Pilot design</h3>
+                    <p>We co-design a pilot cohort, integration, or hiring event tailored to you.</p>
+                </div>
+                <div class="step">
+                    <span class="step-number">4</span>
+                    <h3>Launch & support</h3>
+                    <p>We handle instruction and career support; you focus on recruitment and community.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- THEME TOGGLE – for local storage demonstration -->
+        <div class="theme-toggle-container">
+            <label for="theme-toggle" class="theme-label">
+                <span>🌙</span>
+                <span>High contrast</span>
+            </label>
+            <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox"
+                aria-label="Switch to high contrast mode">
+        </div>
+
+    </main>
+
+    <!-- FOOTER – consistent with other pages -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h3>Impact Digital Academy</h3>
+                <p>Bridging the digital divide through accessible, job-focused education.</p>
+                <p>&copy; 2025 Impact Digital Academy. All rights reserved.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Navigate</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="community.html">Community & Partners</a></li>
+                    <li><a href="attributions.html">Attributions</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="#partnership-form">Inquire</a></li>
+                    <li><a href="#" id="video-demo-link">Project video</a></li>
+                </ul>
+                <p><small><a href="https://youtu.be/your-video-id" target="_blank" rel="noopener">📹 Watch 3-min demo
+                            (JS requirements)</a></small></p>
+            </div>
+            <div class="footer-section">
+                <h4>Meta</h4>
+                <p><small>Author: Emmanuel Ademuyiwa | WDD 231</small></p>
+            </div>
+        </div>
+        <div class="footer-meta">
+            <p>meta name="author" content="Emmanuel Ademuyiwa" | Open Graph implemented</p>
+        </div>
+    </footer>
+
+    <!-- MODAL – accessible dialog (used on courses.html, included globally) -->
+    <div id="module-modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+        <div class="modal-content">
+            <button class="close-modal" aria-label="Close modal">×</button>
+            <h3 id="modal-title" class="modal-heading">Module syllabus</h3>
+            <div id="modal-details">
+                <!-- Dynamic content injected by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Hidden attribution confirmation -->
+    <div style="display: none;">Attributions: <a href="attributions.html">Resource credits</a></div>
+</body>
+
+</html>
