@@ -9,34 +9,38 @@
     <!-- SEO, Author, Social Sharing -->
     <meta name="description"
         content="Partner with Impact Digital Academy to bring no-cost digital skills training to your community. Nonprofits, schools, and employers: let's collaborate.">
-    <meta name="author" content="Emmanuel Ademuyiwa">
+    <meta name="author" content="[Emmanuel Ademuyiwa]">
 
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph / Facebook - UPDATED with absolute URL -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Impact Digital Academy – Partner With Us">
     <meta property="og:description"
         content="Together we can bridge the digital divide. Inquire about community partnerships, group enrollments, or hiring our graduates.">
-    <meta property="og:image" content="images/og-community.webp">
-    <meta property="og:url" content="https://yourdomain.github.io/wdd231/final/community.html">
+    <meta property="og:image" content="https://innio31.github.io/wdd231/final/images/og-community.webp">
+    <meta property="og:url" content="https://innio31.github.io/wdd231/final/community.html">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Impact Digital Academy – Community">
     <meta name="twitter:description" content="Partner with us to create digital opportunity.">
-    <meta name="twitter:image" content="images/og-community.webp">
+    <meta name="twitter:image" content="https://innio31.github.io/wdd231/final/images/og-community.webp">
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="shortcut icon" href="favicon.ico">
 
-    <!-- Fonts & CSS -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
         rel="stylesheet">
+
+    <!-- CSS Files - UPDATED: Two CSS files now -->
     <link rel="stylesheet" href="styles/siteplan.css">
-    <!-- JavaScript module – deferred, type module -->
+    <link rel="stylesheet" href="styles/community.css">
+
+    <!-- JavaScript module -->
     <script type="module" src="scripts/main.js" defer></script>
 </head>
 
@@ -54,6 +58,7 @@
                     <li><a href="index.html" class="nav-link">Home</a></li>
                     <li><a href="courses.html" class="nav-link">Courses</a></li>
                     <li><a href="community.html" class="nav-link active" aria-current="page">Community</a></li>
+                    <li><a href="attributions.html" class="nav-link">Attributions</a></li>
                 </ul>
             </nav>
         </div>
@@ -62,14 +67,14 @@
     <!-- MAIN CONTENT -->
     <main id="main-content" class="container">
 
-        <!-- PAGE HEADER – mission-aligned -->
+        <!-- PAGE HEADER -->
         <section class="page-header" aria-labelledby="page-heading">
             <h1 id="page-heading">Create impact <span class="accent-text">together</span></h1>
             <p class="page-description">We don't just teach digital skills — we build ecosystems of opportunity. Whether
                 you're a nonprofit, school, employer, or advocate, there's a place for you here.</p>
         </section>
 
-        <!-- PARTNERSHIP MODELS – static value props -->
+        <!-- PARTNERSHIP MODELS -->
         <section class="partnership-models" aria-labelledby="models-heading">
             <h2 id="models-heading">Ways to partner</h2>
             <div class="models-grid">
@@ -104,7 +109,7 @@
             </div>
         </section>
 
-        <!-- IMPACT METRICS – static but can be made dynamic if desired -->
+        <!-- IMPACT METRICS -->
         <section class="impact-metrics" aria-labelledby="metrics-heading">
             <h2 id="metrics-heading" class="visually-hidden">Our collective impact</h2>
             <div class="metrics-grid">
@@ -127,13 +132,11 @@
             </div>
         </section>
 
-        <!-- SUCCESS STORIES – dynamic alumni highlight container (can be populated from JSON) -->
+        <!-- SUCCESS STORIES -->
         <section id="success" class="success-stories-full" aria-labelledby="stories-heading">
             <h2 id="stories-heading">Success stories from our community</h2>
             <p class="section-subhead">Real graduates, real careers — powered by digital skills and partnership.</p>
-            <!-- Dynamic container for alumni stories – can be populated by JS from courses.json or separate community.json -->
             <div id="alumni-full-container" class="story-grid-large">
-                <!-- Loading indicator – replaced by JS if we choose to load data here -->
                 <div class="loading-spinner" aria-live="polite">Loading alumni stories...</div>
             </div>
             <div class="center-cta">
@@ -141,12 +144,12 @@
             </div>
         </section>
 
-        <!-- HTML FORM – Partnership Inquiry (REQUIRED) -->
+        <!-- HTML FORM - Partnership Inquiry -->
         <section class="partnership-form-section" aria-labelledby="form-heading">
             <h2 id="form-heading">📋 Start a conversation</h2>
             <p>Tell us about your organization or idea. We'll respond within 2 business days.</p>
 
-            <form id="partnership-form" action="form-action.html" method="get" class="partnership-form">
+            <form id="partnership-form" action="form-action.html" method="get" class="partnership-form" novalidate>
                 <fieldset>
                     <legend>Organization & contact details</legend>
 
@@ -213,7 +216,7 @@
             </form>
         </section>
 
-        <!-- FAQ / COLLABORATION STEPS – additional trust -->
+        <!-- FAQ / COLLABORATION STEPS -->
         <section class="collaboration-steps" aria-labelledby="steps-heading">
             <h2 id="steps-heading">How collaboration works</h2>
             <div class="steps-container">
@@ -240,7 +243,7 @@
             </div>
         </section>
 
-        <!-- THEME TOGGLE – for local storage demonstration -->
+        <!-- THEME TOGGLE -->
         <div class="theme-toggle-container">
             <label for="theme-toggle" class="theme-label">
                 <span>🌙</span>
@@ -252,7 +255,7 @@
 
     </main>
 
-    <!-- FOOTER – consistent with other pages -->
+    <!-- FOOTER -->
     <footer>
         <div class="container footer-content">
             <div class="footer-section">
@@ -275,32 +278,28 @@
                     <li><a href="#partnership-form">Inquire</a></li>
                     <li><a href="#" id="video-demo-link">Project video</a></li>
                 </ul>
-                <p><small><a href="https://youtu.be/your-video-id" target="_blank" rel="noopener">📹 Watch 3-min demo
-                            (JS requirements)</a></small></p>
+                <p><small><a href="https://youtu.be/your-video-id" target="_blank" rel="noopener">📹 Watch 3-min
+                            demo</a></small></p>
             </div>
             <div class="footer-section">
                 <h4>Meta</h4>
-                <p><small>Author: Emmanuel Ademuyiwa | WDD 231</small></p>
+                <p><small>Author: [Emmanuel Ademuyiwa] | WDD 231</small></p>
             </div>
         </div>
         <div class="footer-meta">
-            <p>meta name="author" content="Emmanuel Ademuyiwa" | Open Graph implemented</p>
+            <p>All images and content used with attribution. See <a href="attributions.html">Attributions page</a> for
+                details.</p>
         </div>
     </footer>
 
-    <!-- MODAL – accessible dialog (used on courses.html, included globally) -->
+    <!-- MODAL -->
     <div id="module-modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
         <div class="modal-content">
             <button class="close-modal" aria-label="Close modal">×</button>
             <h3 id="modal-title" class="modal-heading">Module syllabus</h3>
-            <div id="modal-details">
-                <!-- Dynamic content injected by JavaScript -->
-            </div>
+            <div id="modal-details"></div>
         </div>
     </div>
-
-    <!-- Hidden attribution confirmation -->
-    <div style="display: none;">Attributions: <a href="attributions.html">Resource credits</a></div>
 </body>
 
 </html>

@@ -1,7 +1,7 @@
 // ===== scripts/main.js =====
 // IMPACT DIGITAL ACADEMY - Main Entry Module
 // WDD 231 Final Project
-// Author: [Your Name]
+// Author: Emmanuel Ademuyiwa
 // Version: 2.0
 // 
 // This module serves as the single entry point for all JavaScript functionality.
@@ -307,7 +307,7 @@ export function getAppInfo() {
     return {
         name: 'Impact Digital Academy',
         version: '2.0',
-        author: '[Your Name]',
+        author: 'Emmanuel Ademuyiwa',
         course: 'WDD 231',
         semester: 'Winter 2025',
         pages: Object.keys(APP_CONFIG.pages).length,

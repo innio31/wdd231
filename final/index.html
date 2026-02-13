@@ -11,33 +11,40 @@
         content="Impact Digital Academy empowers underserved communities with job-ready digital skills. Explore courses in UX/UI, Data Analytics, and Digital Marketing.">
     <meta name="author" content="Emmanuel Ademuyiwa">
 
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph / Facebook - UPDATED with absolute URL -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Impact Digital Academy – Start Your Digital Career">
     <meta property="og:description"
         content="Free-to-low-cost digital skills training with mentorship and job placement support. Make an impact today.">
-    <meta property="og:image" content="images/og-preview.webp">
-    <meta property="og:url" content="https://yourdomain.github.io/wdd231/final/index.html">
+    <meta property="og:image" content="https://innio31.github.io/wdd231/final/images/og-preview.webp">
+    <meta property="og:url" content="https://innio31.github.io/wdd231/final/index.html">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Impact Digital Academy">
     <meta name="twitter:description" content="Bridging the digital divide through education.">
-    <meta name="twitter:image" content="images/og-preview.webp">
+    <meta name="twitter:image" content="https://innio31.github.io/wdd231/final/images/og-preview.webp">
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="shortcut icon" href="favicon.ico">
 
-    <!-- Fonts & CSS -->
+    <!-- Fonts & CSS - UPDATED: Two CSS files now -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
         rel="stylesheet">
+    <!-- Main stylesheet -->
     <link rel="stylesheet" href="styles/siteplan.css">
-    <!-- JavaScript module – deferred, type module -->
+    <!-- Additional page-specific styles (required second CSS file) -->
+    <link rel="stylesheet" href="styles/pages.css">
+    <!-- JavaScript module -->
     <script type="module" src="scripts/main.js" defer></script>
+
+    <!-- REMOVED ALL BOOTSTRAP CLASSES - these were not actually in your HTML, 
+         but if any exist they need to be removed. Your current HTML looks clean,
+         but I've ensured no Bootstrap classes are present. -->
 </head>
 
 <body>
@@ -59,10 +66,10 @@
         </div>
     </header>
 
-    <!-- MAIN CONTENT – unique id for skip link -->
+    <!-- MAIN CONTENT -->
     <main id="main-content" class="container">
 
-        <!-- HERO section – mission statement, primary CTA -->
+        <!-- HERO section -->
         <section class="hero" aria-labelledby="hero-heading">
             <div class="hero-content">
                 <h1 id="hero-heading">From potential to profession.<br> <span class="accent-text">Digital skills for
@@ -75,13 +82,12 @@
                 </div>
             </div>
             <div class="hero-image">
-                <!-- Optimized image with lazy loading, intrinsic sizing -->
                 <img src="images/hero-team.webp" alt="Diverse group of students collaborating on laptops" width="600"
                     height="400" loading="lazy">
             </div>
         </section>
 
-        <!-- FEATURED PROGRAMS – preview of 3 main courses (static, but links to dynamic page) -->
+        <!-- FEATURED PROGRAMS -->
         <section class="featured-programs" aria-labelledby="programs-heading">
             <h2 id="programs-heading">Launch your career in</h2>
             <div class="program-grid">
@@ -109,13 +115,11 @@
             </div>
         </section>
 
-        <!-- DYNAMIC SUCCESS STORIES – preview of 3 alumni stories fetched from JSON -->
+        <!-- DYNAMIC SUCCESS STORIES -->
         <section class="success-stories" aria-labelledby="stories-heading" id="success-stories-section">
             <h2 id="stories-heading">Real impact. Real people.</h2>
             <p class="section-subhead">From first line of code to full-time offer — meet our alumni.</p>
-            <!-- Dynamic container: will be populated by JavaScript (scripts/courses.js / main.js) -->
             <div id="alumni-preview-container" class="story-grid">
-                <!-- Loading indicator – replaced by JS -->
                 <div class="loading-spinner" aria-live="polite">Loading stories...</div>
             </div>
             <div class="center-cta">
@@ -123,7 +127,7 @@
             </div>
         </section>
 
-        <!-- WHY IMPACT – value props, proximity, repetition -->
+        <!-- WHY IMPACT -->
         <section class="value-props" aria-labelledby="value-heading">
             <h2 id="value-heading" class="visually-hidden">Why choose Impact Digital Academy</h2>
             <div class="value-grid">
@@ -150,7 +154,7 @@
             </div>
         </section>
 
-        <!-- CALL TO ACTION – final conversion section -->
+        <!-- CALL TO ACTION -->
         <section class="cta-section" aria-labelledby="cta-heading">
             <div class="cta-content">
                 <h2 id="cta-heading">Ready to create your impact?</h2>
@@ -163,7 +167,7 @@
             </div>
         </section>
 
-        <!-- THEME TOGGLE – for local storage demonstration (accessibility preference) -->
+        <!-- THEME TOGGLE -->
         <div class="theme-toggle-container">
             <label for="theme-toggle" class="theme-label">
                 <span>🌙</span>
@@ -175,7 +179,7 @@
 
     </main>
 
-    <!-- FOOTER with attributions link, video link, author, etc. -->
+    <!-- FOOTER -->
     <footer>
         <div class="container footer-content">
             <div class="footer-section">
@@ -198,37 +202,29 @@
                     <li><a href="community.html#partnership-form">Inquire</a></li>
                     <li><a href="#" id="video-demo-link">Project video</a></li>
                 </ul>
-                <!-- Video link – required in footer -->
-                <p><small><a href="https://youtu.be/your-video-id" target="_blank" rel="noopener">📹 Watch 3-min demo
-                            (JavaScript requirements)</a></small></p>
+                <p><small><a href="https://youtu.be/your-video-id" target="_blank" rel="noopener">📹 Watch 3-min
+                            demo</a></small></p>
             </div>
             <div class="footer-section">
                 <h4>Meta</h4>
                 <p><small>Author: Emmanuel Ademuyiwa | WDD 231</small></p>
             </div>
         </div>
-        <!-- Explicit author and meta line -->
         <div class="footer-meta">
-            <p>meta name="author" content="Emmanuel Ademuyiwa" | meta name="description" per page | Open Graph
-                implemented</p>
+            <p>All images and content used with attribution. See <a href="attributions.html">Attributions page</a> for
+                details.</p>
         </div>
     </footer>
 
-    <!-- MODAL – hidden by default, will be used on courses.html primarily, 
-         but placed in global for consistency. 
-         For homepage we might not trigger it, but structure exists for modal.js -->
+    <!-- MODAL -->
     <div id="module-modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
         <div class="modal-content">
             <button class="close-modal" aria-label="Close modal">×</button>
             <h3 id="modal-title" class="modal-heading">Module details</h3>
-            <div id="modal-details">
-                <!-- dynamic content injected by JS -->
-            </div>
+            <div id="modal-details"></div>
         </div>
     </div>
 
-    <!-- Hidden attribution link placeholder – ensures we have attributions.html linked -->
-    <div style="display: none;">Attributions: <a href="attributions.html">Resource credits</a></div>
 </body>
 
 </html>
