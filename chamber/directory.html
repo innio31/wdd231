@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
-        content="Explore 100+ registered businesses in Ota, Ogun State. Find local companies, services, and connect with Ota's business community through our comprehensive directory.">
+        content="Discover 100+ businesses in Ota, Ogun State. Find local companies, services, and connect with the Ota business community through our directory.">
     <meta name="author" content="Emmanuel Ademuyiwa">
 
     <!-- Facebook Meta Tags -->
@@ -20,12 +20,12 @@
     <!-- Favicon -->
     <link rel="icon" href="images/chamber-logo.ico" type="image/png">
 
-    <!-- CSS Files - Optimized loading order -->
+    <!-- CSS Files -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
 
-    <!-- Preconnect to Google Fonts -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -34,11 +34,14 @@
 </head>
 
 <body>
+    <!-- ===== HEADER ===== -->
     <header>
         <div class="header-container">
             <a href="index.html" class="logo-link" aria-label="Ota Chamber of Commerce Home">
-                <img src="images/chamber-logo.png" alt="Ota Chamber of Commerce Logo" width="50" height="50">
-                <h1>Ota Chamber of Commerce</h1>
+                <img src="images/chamber-logo.png" alt="Ota Chamber of Commerce Logo" width="50" height="50"
+                    loading="lazy">
+                <!-- Changed from h1 to span -->
+                <span class="site-title">Ota Chamber of Commerce</span>
             </a>
             <button id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
                 ☰
@@ -56,9 +59,12 @@
         </nav>
     </header>
 
+    <!-- ===== MAIN CONTENT ===== -->
     <main>
-        <h1>Business Directory</h1>
-        <p class="directory-intro">Discover local businesses and connect with the Ota business community</p>
+        <!-- Single H1 inside main - matches page title -->
+        <h1 class="page-title">Business Directory</h1>
+
+        <p class="directory-intro">Discover local businesses and connect with the Ota business community.</p>
 
         <div class="view-toggle" role="group" aria-label="View toggle">
             <button id="grid-view" class="active" aria-label="Grid view" aria-pressed="true">
@@ -74,14 +80,15 @@
         </div>
     </main>
 
+    <!-- ===== FOOTER ===== -->
     <footer>
         <div class="footer-content">
             <div class="contact-info">
                 <h3>Ota Chamber of Commerce</h3>
                 <p>5, Ade-Akinlade Street, Iyesi, Ota, Ogun</p>
                 <p>Ota, Ogun State, Nigeria</p>
-                <p>Phone: <a href="tel:+2349035448295">+234 903 544 8295</a></p>
-                <p>Email: <a href="mailto:info@otacitychamber.org">info@otacitychamber.org</a></p>
+                <p>📞 <a href="tel:+2349035448295">+234 903 544 8295</a></p>
+                <p>✉️ <a href="mailto:info@otacitychamber.org">info@otacitychamber.org</a></p>
             </div>
 
             <div class="footer-bottom">
@@ -93,9 +100,8 @@
         </div>
     </footer>
 
-    <!-- Load main.js first for shared functionality -->
+    <!-- JavaScript -->
     <script src="scripts/main.js"></script>
-    <!-- Then load page-specific JavaScript -->
     <script src="scripts/directory.js"></script>
 </body>
 

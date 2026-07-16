@@ -26,6 +26,29 @@ body {
     background-color: var(--background-color);
 }
 
+/* ===== VISUALLY HIDDEN ===== */
+/* Hides content visually but keeps it accessible to screen readers */
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+/* ===== SITE TITLE IN HEADER ===== */
+.site-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: white;
+}
+
 /* ===== HEADER ===== */
 header {
     background-color: var(--primary-color);
