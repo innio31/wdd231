@@ -1,201 +1,35 @@
-/* Tablet Styles */
+/* ===== OVERRIDES FOR LARGER SCREENS ===== */
+
+/* Tablet & Desktop adjustments for specific layouts */
 @media (min-width: 768px) {
+    /* Directory page specific */
     .grid-view {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    #menu-toggle {
-        display: none;
-    }
-
-    #primary-nav {
-        display: block;
-    }
-
-    #primary-nav ul {
-        display: flex;
-        justify-content: center;
-        padding: 0;
-    }
-
-    #primary-nav li {
-        margin: 0;
-    }
-}
-
-/* Desktop Styles */
-@media (min-width: 1024px) {
-    .grid-view {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .footer-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-
-    .contact-info {
-        flex: 1;
-        margin-bottom: 0;
-    }
-
-    .footer-bottom {
-        flex: 1;
-        text-align: right;
-        border-top: none;
-        padding-top: 0;
-        border-left: 1px solid rgba(255, 255, 255, 0.1);
-        padding-left: 2rem;
-    }
-}
-
-
-/* Tablet Styles - Home Page */
-@media (min-width: 768px) {
-    .hero-image {
-        height: 400px;
-    }
-
-    .hero-content h2 {
-        font-size: 2.5rem;
-    }
-
-    .events-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .spotlights-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/* Desktop Styles - Home Page */
-@media (min-width: 1024px) {
-    .hero-content h2 {
-        font-size: 3rem;
-    }
-
-    .events-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .weather-container {
-        grid-template-columns: 1fr 2fr;
-    }
-
+    /* Weather forecast improvements */
     .forecast-grid {
-        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
     }
 
-    .spotlights-container {
-        grid-template-columns: repeat(3, 1fr);
+    .forecast-day {
+        padding: 1rem;
     }
 }
 
-
-/* Large Screens (1025px and above) - Discover Page */
-
-@media (min-width: 1025px) {
-
-    /* Discover Page Layout */
-    .gallery-grid {
+@media (min-width: 1024px) {
+    /* Directory page specific */
+    .grid-view {
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(4, auto);
-        grid-template-areas:
-            "card1 card2 card3"
-            "card4 card5 card6"
-            "card7 card8 .";
-        gap: 2.5rem;
     }
 
-    /* Assign each card to a specific grid area */
-    .card-1 {
-        grid-area: card1;
+    /* Hero overlay improvements */
+    .hero-content {
+        padding: 3rem 4rem;
     }
 
-    .card-2 {
-        grid-area: card2;
-    }
-
-    .card-3 {
-        grid-area: card3;
-    }
-
-    .card-4 {
-        grid-area: card4;
-    }
-
-    .card-5 {
-        grid-area: card5;
-    }
-
-    .card-6 {
-        grid-area: card6;
-    }
-
-    .card-7 {
-        grid-area: card7;
-    }
-
-    .card-8 {
-        grid-area: card8;
-    }
-
-    /* Create interesting layout variations */
-    .card-1 {
-        grid-column: span 2;
-    }
-
-    .card-2 {
-        grid-row: span 2;
-    }
-
-    .card-8 {
-        grid-column: span 2;
-    }
-
-    /* Adjust card sizes for visual hierarchy */
-    .card-1,
-    .card-2,
-    .card-8 {
-        height: auto;
-    }
-
-    .card-1 figure,
-    .card-8 figure {
-        height: 250px;
-    }
-
-    .card-2 figure {
-        height: 100%;
-    }
-
-    /* Adjust typography */
-    .page-header h2 {
-        font-size: 2.5rem;
-    }
-
-    .subtitle {
-        font-size: 1.2rem;
-    }
-
-    .stat-number {
-        font-size: 2.5rem;
-    }
-
-    .attraction-card h2 {
-        font-size: 1.5rem;
-    }
-
-    /* Enhanced hover effects */
-    .attraction-card:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-    }
-
-    .attraction-card:hover img {
-        transform: scale(1.1);
-        filter: brightness(1.15);
+    /* Forecast */
+    .forecast-day .forecast-temp {
+        font-size: 1.4rem;
     }
 }

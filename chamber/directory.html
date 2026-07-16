@@ -9,17 +9,18 @@
     <meta name="author" content="Emmanuel Ademuyiwa">
 
     <!-- Facebook Meta Tags -->
-    <meta property="og:title" content="Ota Chamber of Commerce">
+    <meta property="og:title" content="Ota Chamber of Commerce - Business Directory">
     <meta property="og:description" content="Discover local businesses and connect with the Ota business community">
     <meta property="og:image" content="https://innio31.github.io/wdd231/chamber/images/social-preview.jpg">
     <meta property="og:url" content="https://innio31.github.io/wdd231/chamber/directory.html">
     <meta property="og:type" content="website">
 
-    <title>Ota Chamber of Commerce - Directory</title>
+    <title>Ota Chamber of Commerce - Business Directory</title>
+
     <!-- Favicon -->
     <link rel="icon" href="images/chamber-logo.ico" type="image/png">
 
-    <!-- CSS Files -->
+    <!-- CSS Files - Optimized loading order -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
@@ -28,28 +29,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Montserrat:wght@400;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;600;700&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
     <header>
         <div class="header-container">
-            <a href="index.html" class="logo-link">
-                <img src="images/chamber-logo.png" alt="Ota Chamber of Commerce Logo">
+            <a href="index.html" class="logo-link" aria-label="Ota Chamber of Commerce Home">
+                <img src="images/chamber-logo.png" alt="Ota Chamber of Commerce Logo" width="50" height="50">
                 <h1>Ota Chamber of Commerce</h1>
             </a>
-            <button
-id="menu-toggle"
-aria-label="Toggle navigation"
-aria-expanded="false"
-aria-controls="primary-nav">
+            <button id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
+                ☰
+            </button>
         </div>
 
-        <nav id="primary-nav">
+        <nav id="primary-nav" aria-label="Main Navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="directory.html" class="active" aria-current="page">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -59,17 +58,18 @@ aria-controls="primary-nav">
 
     <main>
         <h1>Business Directory</h1>
+        <p class="directory-intro">Discover local businesses and connect with the Ota business community</p>
 
-        <div class="view-toggle">
-            <button id="grid-view" class="active" aria-label="Grid view">
+        <div class="view-toggle" role="group" aria-label="View toggle">
+            <button id="grid-view" class="active" aria-label="Grid view" aria-pressed="true">
                 <span>Grid View</span>
             </button>
-            <button id="list-view" aria-label="List view">
+            <button id="list-view" aria-label="List view" aria-pressed="false">
                 <span>List View</span>
             </button>
         </div>
 
-        <div id="members-container" class="grid-view">
+        <div id="members-container" class="grid-view" role="list">
             <!-- Member cards will be dynamically inserted here -->
         </div>
     </main>
@@ -79,9 +79,9 @@ aria-controls="primary-nav">
             <div class="contact-info">
                 <h3>Ota Chamber of Commerce</h3>
                 <p>5, Ade-Akinlade Street, Iyesi, Ota, Ogun</p>
-                <p>Ota, Ogun</p>
-                <p>Phone: 234 903 544 8295</p>
-                <p>Email: info@otacitychamber.org</p>
+                <p>Ota, Ogun State, Nigeria</p>
+                <p>Phone: <a href="tel:+2349035448295">+234 903 544 8295</a></p>
+                <p>Email: <a href="mailto:info@otacitychamber.org">info@otacitychamber.org</a></p>
             </div>
 
             <div class="footer-bottom">
@@ -93,7 +93,9 @@ aria-controls="primary-nav">
         </div>
     </footer>
 
+    <!-- Load main.js first for shared functionality -->
     <script src="scripts/main.js"></script>
+    <!-- Then load page-specific JavaScript -->
     <script src="scripts/directory.js"></script>
 </body>
 
