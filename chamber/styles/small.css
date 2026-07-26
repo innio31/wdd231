@@ -1,8 +1,8 @@
 /* ===== BASE STYLES - MOBILE FIRST ===== */
 :root {
     --primary-color: #1a2a3a;
-    --secondary-color: #3498db;
-    --accent-color: #e74c3c;
+    --secondary-color: #2E86C1;
+    --accent-color: #C0392B;
     --background-color: #f8f9fa;
     --text-color: #333333;
     --light-text: #ffffff;
@@ -13,10 +13,18 @@
     --transition: all 0.3s ease;
 }
 
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
 }
 
 body {
@@ -97,10 +105,16 @@ header {
     padding: 0.3rem 0.8rem;
     border-radius: 4px;
     transition: var(--transition);
+    line-height: 1;
 }
 
 #menu-toggle:hover {
     background-color: rgba(255, 255, 255, 0.1);
+}
+
+#menu-toggle:focus-visible {
+    outline: 2px solid var(--secondary-color);
+    outline-offset: 2px;
 }
 
 /* ===== NAVIGATION ===== */
@@ -149,11 +163,25 @@ header {
     font-weight: 700;
 }
 
+#primary-nav a:focus-visible {
+    outline: 2px solid var(--secondary-color);
+    outline-offset: 2px;
+}
+
 /* ===== MAIN CONTENT ===== */
 main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 1rem;
+    min-height: 70vh;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
 }
 
 h2 {
@@ -172,6 +200,11 @@ h2::after {
     height: 3px;
     background: var(--secondary-color);
     margin: 0.5rem auto 0;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-color);
 }
 
 /* ===== HERO SECTION ===== */
@@ -240,9 +273,9 @@ h2::after {
 }
 
 .cta-button:hover {
-    background-color: #c0392b;
+    background-color: #a93226;
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(231, 76, 60, 0.4);
+    box-shadow: 0 8px 25px rgba(192, 57, 43, 0.4);
 }
 
 .cta-button:focus-visible {
@@ -461,6 +494,7 @@ h2::after {
 .spotlight-header h3 {
     font-size: 1rem;
     margin-bottom: 0.2rem;
+    color: var(--light-text);
 }
 
 .membership-badge {
@@ -546,6 +580,7 @@ footer {
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 0.8rem;
     font-size: 1.2rem;
+    color: var(--light-text);
 }
 
 .contact-info p {
@@ -707,5 +742,29 @@ footer {
         border-left: 1px solid rgba(255, 255, 255, 0.1);
         padding-left: 2rem;
         flex: 1;
+    }
+}
+
+/* ===== PRINT STYLES ===== */
+@media print {
+    header,
+    footer,
+    #menu-toggle,
+    .cta-button {
+        display: none !important;
+    }
+
+    main {
+        padding: 0 !important;
+    }
+
+    .hero {
+        box-shadow: none !important;
+    }
+
+    .event-card,
+    .spotlight-card {
+        box-shadow: none !important;
+        border: 1px solid #ddd !important;
     }
 }

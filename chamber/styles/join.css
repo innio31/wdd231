@@ -6,6 +6,13 @@
     padding: 1rem;
 }
 
+.join-main h1 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
 .intro-text {
     text-align: center;
     margin-bottom: 2rem;
@@ -29,10 +36,11 @@
     box-shadow: var(--shadow);
 }
 
-.application-form h3 {
+.application-form h2 {
     color: var(--primary-color);
     margin-bottom: 1.5rem;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
 fieldset {
@@ -89,7 +97,7 @@ input:invalid:not(:focus):not(:placeholder-shown) {
 }
 
 .submit-btn {
-    background-color: var(--accent-color);
+    background-color: #c0392b;
     color: white;
     border: none;
     padding: 1rem 2rem;
@@ -102,7 +110,7 @@ input:invalid:not(:focus):not(:placeholder-shown) {
 }
 
 .submit-btn:hover {
-    background-color: #c0392b;
+    background-color: #a93226;
     transform: translateY(-2px);
 }
 
@@ -118,10 +126,11 @@ input:invalid:not(:focus):not(:placeholder-shown) {
     box-shadow: var(--shadow);
 }
 
-.membership-cards h3 {
+.membership-cards h2 {
     color: var(--primary-color);
     margin-bottom: 1.5rem;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .cards-container {
@@ -144,7 +153,6 @@ input:invalid:not(:focus):not(:placeholder-shown) {
         opacity: 0;
         transform: translateY(20px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
@@ -155,15 +163,12 @@ input:invalid:not(:focus):not(:placeholder-shown) {
 .membership-card:nth-child(1) {
     animation-delay: 0.1s;
 }
-
 .membership-card:nth-child(2) {
     animation-delay: 0.2s;
 }
-
 .membership-card:nth-child(3) {
     animation-delay: 0.3s;
 }
-
 .membership-card:nth-child(4) {
     animation-delay: 0.4s;
 }
@@ -179,25 +184,25 @@ input:invalid:not(:focus):not(:placeholder-shown) {
     color: white;
 }
 
-/* Different colors for each membership level */
+/* Different colors for each membership level - FIXED CONTRAST */
 [data-level="np"] .card-header {
-    background-color: #95a5a6;
+    background-color: #2c3e50;
 }
 
 [data-level="bronze"] .card-header {
-    background-color: #cd7f32;
+    background-color: #8B6914;
 }
 
 [data-level="silver"] .card-header {
-    background-color: #c0c0c0;
+    background-color: #5D6D7E;
 }
 
 [data-level="gold"] .card-header {
-    background-color: #ffd700;
-    color: #333;
+    background-color: #B7950B;
+    color: white;
 }
 
-.card-header h4 {
+.card-header h3 {
     margin: 0 0 0.5rem 0;
     font-size: 1.3rem;
 }
@@ -244,7 +249,7 @@ input:invalid:not(:focus):not(:placeholder-shown) {
     display: block;
     width: 100%;
     padding: 0.8rem;
-    background-color: var(--secondary-color);
+    background-color: #2E86C1;
     color: white;
     border: none;
     border-radius: 4px;
@@ -254,7 +259,7 @@ input:invalid:not(:focus):not(:placeholder-shown) {
 }
 
 .info-btn:hover {
-    background-color: #2980b9;
+    background-color: #2471A3;
 }
 
 /* Modal Styles */
@@ -288,7 +293,6 @@ input:invalid:not(:focus):not(:placeholder-shown) {
         opacity: 0;
         transform: translateY(-20px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
@@ -345,45 +349,10 @@ input:invalid:not(:focus):not(:placeholder-shown) {
     .join-container {
         grid-template-columns: 1fr 1fr;
     }
-
     .cards-container {
         grid-template-columns: 1fr;
     }
-
     .modal-content {
         max-width: 600px;
     }
-}
-/* Enhanced animation for cards */
-@keyframes cardEntrance {
-    from {
-        opacity: 0;
-        transform: translateY(30px) scale(0.95);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
-}
-
-/* Add a subtle pulse animation on load (once) */
-@keyframes cardPulse {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.02);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
-.membership-card {
-    border: 2px solid var(--border-color);
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.3s, box-shadow 0.3s;
-    animation: cardEntrance 0.6s ease-out forwards, cardPulse 0.8s ease-out 0.8s forwards;
-    opacity: 0;
 }
